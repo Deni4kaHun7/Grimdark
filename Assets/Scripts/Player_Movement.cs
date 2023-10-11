@@ -6,8 +6,11 @@ using UnityEngine.U2D;
 public class Player_Movement : MonoBehaviour
 {
     private Rigidbody2D rb;
+    private BoxCollider2D coll;
     private SpriteRenderer sprite;
     private Animator animator;
+
+    [SerializeField] private LayerMask jumpableGround;
 
     private float dirX;
 
@@ -20,6 +23,7 @@ public class Player_Movement : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        coll = GetComponent<BoxCollider2D>();
         sprite = rb.GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
     }
@@ -30,7 +34,7 @@ public class Player_Movement : MonoBehaviour
         dirX = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(dirX * movement_speed, rb.velocity.y);
 
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
         {
             rb.velocity = new Vector2(rb.velocity.x, jump_speed);
         }
@@ -67,5 +71,10 @@ public class Player_Movement : MonoBehaviour
         }
 
         animator.SetInteger("state", (int)state);
+    }
+
+    private bool IsGrounded()
+    {
+        return Physics2D.BoxCast(coll.bounds.center, coll.bounds.size, 0f, Vector2.down, .1f, jumpableGround);
     }
 }
