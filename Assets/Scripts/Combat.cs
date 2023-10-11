@@ -22,6 +22,5 @@ public class Combat : MonoBehaviour
 
     private void Attack(){
         animator.SetTrigger("attack");
-        animator.SetTrigger("attack");
     }
 }
