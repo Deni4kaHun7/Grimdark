@@ -15,9 +15,8 @@ GameObject:
   - component: {fileID: 2464222044056172153}
   - component: {fileID: 7436048567321894292}
   - component: {fileID: 3938344433181063076}
-  - component: {fileID: 4122409210906652302}
   m_Layer: 0
-  m_Name: Player 1
+  m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -214,19 +213,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponCollider: {fileID: 5441273816679490047}
---- !u!114 &4122409210906652302
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4098329329138791650}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c8ba0991d90944cbfa1a79ea928f5f5c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damageAmount: 1
 --- !u!1 &9046236780148894903
 GameObject:
   m_ObjectHideFlags: 0
@@ -237,6 +223,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5441273816679490047}
   - component: {fileID: 197223932865020458}
+  - component: {fileID: 244069503154653243}
   m_Layer: 0
   m_Name: Weapon Collider
   m_TagString: Untagged
@@ -303,13 +290,26 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.808053, y: 0.3893063}
+    - - {x: 0.9902191, y: 0.5129192}
       - {x: 0.10947704, y: 0.40686607}
       - {x: 0.18937296, y: 0.32741097}
       - {x: 0.18364006, y: -0.29268372}
-      - {x: 0.56492484, y: -0.29694247}
-      - {x: 0.6848688, y: -0.18933702}
-      - {x: 0.7329235, y: -0.13385367}
-      - {x: 0.7900677, y: -0.067875385}
-      - {x: 0.95016766, y: 0.11697358}
+      - {x: 1.0854002, y: -0.31646037}
+      - {x: 1.1337786, y: -0.22186661}
+      - {x: 1.1753273, y: -0.08831215}
+      - {x: 1.0763283, y: 0.036219597}
+      - {x: 1.1258278, y: 0.182033}
   m_UseDelaunayMesh: 0
+--- !u!114 &244069503154653243
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9046236780148894903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c8ba0991d90944cbfa1a79ea928f5f5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damageAmount: 1
