@@ -35,7 +35,7 @@ ScriptedImporter:
     spriteMeshType: 1
     alignment: 0
     spritePivot: {x: 0.5, y: 0.5}
-    spritePixelsToUnits: 100
+    spritePixelsToUnits: 32
     spriteBorder: {x: 0, y: 0, z: 0, w: 0}
     spriteGenerateFallbackPhysicsShape: 0
     generateCubemap: 6
@@ -95,7 +95,7 @@ ScriptedImporter:
     addSortingGroup: 1
     addShadowCasters: 0
   importFileNodeState: 1
-  platformSettingsDirtyTick: 0
+  platformSettingsDirtyTick: 638327067789067160
   textureAssetName: 
   singleSpriteImportData:
   - name: 
@@ -121,7 +121,7 @@ ScriptedImporter:
   animatedSpriteImportData:
   - name: vagabond-attack_Frame_0
     originalName: 
-    pivot: {x: 1.9615386, y: 0}
+    pivot: {x: 0.471917, y: 0.5680871}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -141,7 +141,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 125}
   - name: vagabond-attack_Frame_6
     originalName: 
-    pivot: {x: 0.72131145, y: 0}
+    pivot: {x: 0.5046228, y: 0.48845953}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -161,7 +161,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 73}
   - name: vagabond-attack_Frame_7
     originalName: 
-    pivot: {x: 0.77192986, y: 0}
+    pivot: {x: 0.5054976, y: 0.4962957}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -181,7 +181,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 100}
   - name: vagabond-attack_Frame_8
     originalName: 
-    pivot: {x: 2.2, y: 0}
+    pivot: {x: 0.5809526, y: 0.5228765}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -201,7 +201,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 179}
   - name: vagabond-attack_Frame_9
     originalName: 
-    pivot: {x: 2.3157895, y: 0}
+    pivot: {x: 0.5818402, y: 0.53094304}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -221,7 +221,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 230}
   - name: vagabond-attack_Frame_10
     originalName: 
-    pivot: {x: 2.1904762, y: 0}
+    pivot: {x: 0.4973545, y: 0.43442014}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -241,7 +241,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 152}
   - name: vagabond-attack_Frame_1
     originalName: 
-    pivot: {x: 0.73913044, y: 0}
+    pivot: {x: 0.4815382, y: 0.5078256}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -261,7 +261,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 47}
   - name: vagabond-attack_Frame_2
     originalName: 
-    pivot: {x: 1, y: 0}
+    pivot: {x: 0.5147579, y: 0.5826747}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -281,7 +281,7 @@ ScriptedImporter:
     uvTransform: {x: 73, y: 73}
   - name: vagabond-attack_Frame_3
     originalName: 
-    pivot: {x: 1.5714287, y: 0}
+    pivot: {x: 0.50665444, y: 0.5046583}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -301,7 +301,7 @@ ScriptedImporter:
     uvTransform: {x: 71, y: 4}
   - name: vagabond-attack_Frame_4
     originalName: 
-    pivot: {x: 2.4444444, y: 0}
+    pivot: {x: 0.51387537, y: 0.5014462}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -321,7 +321,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 204}
   - name: vagabond-attack_Frame_5
     originalName: 
-    pivot: {x: 2.5294118, y: 0}
+    pivot: {x: 0.5564481, y: 0.5007763}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -341,7 +341,7 @@ ScriptedImporter:
     uvTransform: {x: 107, y: 4}
   - name: vagabond-attack_Frame_11
     originalName: 
-    pivot: {x: 0.7627119, y: 0}
+    pivot: {x: 0.48636687, y: 0.485803}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -361,7 +361,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: vagabond-attack_Frame_12
     originalName: 
-    pivot: {x: 0.85714287, y: 0}
+    pivot: {x: 0.49441093, y: 0.48666644}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -381,7 +381,7 @@ ScriptedImporter:
     uvTransform: {x: 81, y: 47}
   - name: vagabond-attack_Frame_13
     originalName: 
-    pivot: {x: 0.94736844, y: 0}
+    pivot: {x: 0.50331455, y: 0.49756858}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -401,7 +401,7 @@ ScriptedImporter:
     uvTransform: {x: 69, y: 100}
   - name: vagabond-attack_Frame_14
     originalName: 
-    pivot: {x: 0.9722222, y: 0}
+    pivot: {x: 0.47044638, y: 0.54631275}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -550,7 +550,55 @@ ScriptedImporter:
       spriteId: 0af69c17890380c46b34c00325d0eb29
     linkedCells: []
     parentIndex: -1
-  platformSettings: []
+  platformSettings:
+  - name: DefaultTexturePlatform
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Standalone
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: Server
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
+  - name: WebGL
+    overridden: 0
+    ignorePlatformSupport: 0
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    androidETC2FallbackOverride: 0
   secondarySpriteTextures: []
   spritePackingTag: 
   canvasSize: {x: 128, y: 64}

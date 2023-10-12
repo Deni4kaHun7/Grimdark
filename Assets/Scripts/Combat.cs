@@ -6,6 +6,7 @@ public class Combat : MonoBehaviour
 {
     private PlayerControls playerControls;
     private Animator animator;
+    [SerializeField] private Transform weaponCollider;
 
     private void Awake() {
         playerControls = new PlayerControls();
@@ -22,5 +23,11 @@ public class Combat : MonoBehaviour
 
     private void Attack(){
         animator.SetTrigger("attack");
+
+        weaponCollider.gameObject.SetActive(true);
+    }
+
+    public void DoneAttackingAnimEvent(){
+        weaponCollider.gameObject.SetActive(false);
     }
 }
