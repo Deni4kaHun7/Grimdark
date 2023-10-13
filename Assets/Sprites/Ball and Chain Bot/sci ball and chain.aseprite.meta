@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 61c05d33795df4bd98619e34dfedb5db
+guid: 388401860c6b64feeabbdbc58397d39f
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -119,7 +119,7 @@ ScriptedImporter:
     tessellationDetail: 0
     uvTransform: {x: 0, y: 0}
   animatedSpriteImportData:
-  - name: StormHead_Frame_0
+  - name: sci ball and chain_Frame_0
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -130,7 +130,7 @@ ScriptedImporter:
       y: 4
       width: 192
       height: 192
-    spriteID: ff6217d27c6114d1da1c073664cb5c92
+    spriteID: ff41a9b49e89e404e9a0954ba08f20b4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -139,7 +139,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 4}
-  - name: StormHead_Frame_1
+  - name: sci ball and chain_Frame_1
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -150,7 +150,7 @@ ScriptedImporter:
       y: 204
       width: 192
       height: 192
-    spriteID: 3ea52c47416204ef1a89ad867d78fb25
+    spriteID: bbce3c68f0fde4591a2a4fd066fbeae0
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -159,7 +159,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 204}
-  - name: StormHead_Frame_2
+  - name: sci ball and chain_Frame_2
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -170,7 +170,7 @@ ScriptedImporter:
       y: 404
       width: 192
       height: 192
-    spriteID: 25220ed7673284034aeaefb344426c79
+    spriteID: e1f76021e397b40479ad491f97ae8e53
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -179,7 +179,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 404}
-  - name: StormHead_Frame_3
+  - name: sci ball and chain_Frame_3
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -190,7 +190,7 @@ ScriptedImporter:
       y: 604
       width: 192
       height: 192
-    spriteID: 4d3c986272182499385216297ee5bbbf
+    spriteID: de27947be3b5d4e1f94dc878f46cb8ff
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -199,7 +199,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 604}
-  - name: StormHead_Frame_4
+  - name: sci ball and chain_Frame_4
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -210,7 +210,7 @@ ScriptedImporter:
       y: 804
       width: 192
       height: 192
-    spriteID: a1c9e0c168fd94740bdfa30784e90184
+    spriteID: f27174370d48c4e409db09a44623bb19
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -219,7 +219,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 804}
-  - name: StormHead_Frame_5
+  - name: sci ball and chain_Frame_5
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -230,7 +230,7 @@ ScriptedImporter:
       y: 1004
       width: 192
       height: 192
-    spriteID: d8932dd783a494d71add8ac72b35c1db
+    spriteID: 2e9f72e738ed44bbc8379b90de8be304
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -239,7 +239,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 1004}
-  - name: StormHead_Frame_6
+  - name: sci ball and chain_Frame_6
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -250,7 +250,7 @@ ScriptedImporter:
       y: 1204
       width: 192
       height: 192
-    spriteID: b4edde1099d434e0b8e7d9cbbb32a63c
+    spriteID: c324aa88cb90d44a4a7be872002dee0b
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -259,7 +259,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 1204}
-  - name: StormHead_Frame_7
+  - name: sci ball and chain_Frame_7
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -270,7 +270,7 @@ ScriptedImporter:
       y: 1404
       width: 192
       height: 192
-    spriteID: 9797a4cb9c1744fc0b305019e104730b
+    spriteID: d331f0c141b314fbd94710edbc7b403f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -279,7 +279,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 1404}
-  - name: StormHead_Frame_8
+  - name: sci ball and chain_Frame_8
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -290,7 +290,7 @@ ScriptedImporter:
       y: 1604
       width: 192
       height: 192
-    spriteID: 1df374150d1c24474a0d12f142c09de6
+    spriteID: 7b6ec77e1e6124b2f88ecec3f0f0952f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -299,7 +299,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 1604}
-  - name: StormHead_Frame_9
+  - name: sci ball and chain_Frame_9
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -310,7 +310,7 @@ ScriptedImporter:
       y: 1804
       width: 192
       height: 192
-    spriteID: 181ca2b5d673749ccac47ada147ba084
+    spriteID: 4a8c99f5313c848d8869c370ede7fe89
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -319,7 +319,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 4, y: 1804}
-  - name: StormHead_Frame_10
+  - name: sci ball and chain_Frame_10
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -330,7 +330,7 @@ ScriptedImporter:
       y: 4
       width: 192
       height: 192
-    spriteID: 1b44853fb798549858951e9ac9d9a748
+    spriteID: 07d1eac4479c64acdae88dea5e7b8e4e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -339,7 +339,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 204, y: 4}
-  - name: StormHead_Frame_11
+  - name: sci ball and chain_Frame_11
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -350,7 +350,7 @@ ScriptedImporter:
       y: 204
       width: 192
       height: 192
-    spriteID: e070258f86af54080aedf611595772d5
+    spriteID: 44b96951982e44948965215bcf72ee2f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -359,7 +359,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 204, y: 204}
-  - name: StormHead_Frame_12
+  - name: sci ball and chain_Frame_12
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -370,7 +370,7 @@ ScriptedImporter:
       y: 404
       width: 192
       height: 192
-    spriteID: aa2a72337db504faf9c68358d607f335
+    spriteID: d543086639a8541e78d623c9b81b9614
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -379,7 +379,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 204, y: 404}
-  - name: StormHead_Frame_13
+  - name: sci ball and chain_Frame_13
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -390,7 +390,7 @@ ScriptedImporter:
       y: 604
       width: 192
       height: 192
-    spriteID: 985c220a85741446481d626182a8d851
+    spriteID: 09c90b3de99aa4774803d5bfabee0d29
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -399,7 +399,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 204, y: 604}
-  - name: StormHead_Frame_14
+  - name: sci ball and chain_Frame_14
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -410,7 +410,7 @@ ScriptedImporter:
       y: 804
       width: 192
       height: 192
-    spriteID: e4b7ed970f3a4482db9fb0557a43a0bf
+    spriteID: d3113325374214af9910c653e46ab353
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -419,7 +419,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 204, y: 804}
-  - name: StormHead_Frame_15
+  - name: sci ball and chain_Frame_15
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -430,7 +430,7 @@ ScriptedImporter:
       y: 1004
       width: 192
       height: 192
-    spriteID: 65e112a01893549e68d735e356d89236
+    spriteID: 6bd24cd8ccffe459cab58edf121d29cd
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -439,7 +439,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 204, y: 1004}
-  - name: StormHead_Frame_16
+  - name: sci ball and chain_Frame_16
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -450,7 +450,7 @@ ScriptedImporter:
       y: 1204
       width: 192
       height: 192
-    spriteID: 763868ab34d7346a692c6c700bf88f41
+    spriteID: 07b221c366c4e4ea38f493b7d65044c5
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -459,7 +459,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 204, y: 1204}
-  - name: StormHead_Frame_17
+  - name: sci ball and chain_Frame_17
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -470,7 +470,7 @@ ScriptedImporter:
       y: 1404
       width: 192
       height: 192
-    spriteID: 1e5e39fbfb843495d97f09a7af0fed44
+    spriteID: b7508468802934a5abd3a499d8ea94f4
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -479,7 +479,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 204, y: 1404}
-  - name: StormHead_Frame_18
+  - name: sci ball and chain_Frame_18
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -490,7 +490,7 @@ ScriptedImporter:
       y: 1604
       width: 192
       height: 192
-    spriteID: 13227748484034273abcfbdfbec5cd32
+    spriteID: 4074ceba419b14c0b87a1e2340fa39e3
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -499,7 +499,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 204, y: 1604}
-  - name: StormHead_Frame_19
+  - name: sci ball and chain_Frame_19
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -510,7 +510,7 @@ ScriptedImporter:
       y: 1804
       width: 192
       height: 192
-    spriteID: 4abed4c7001324259b27c48928b2164e
+    spriteID: eb9ec1c716c814f3eb95cf439b519487
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -519,7 +519,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 204, y: 1804}
-  - name: StormHead_Frame_20
+  - name: sci ball and chain_Frame_20
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -530,7 +530,7 @@ ScriptedImporter:
       y: 4
       width: 192
       height: 192
-    spriteID: 95e71c1c763704aad969c17b09a1e105
+    spriteID: 4014df394d6a14078989db4089a7b1f2
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -539,7 +539,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 404, y: 4}
-  - name: StormHead_Frame_21
+  - name: sci ball and chain_Frame_21
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -550,7 +550,7 @@ ScriptedImporter:
       y: 204
       width: 192
       height: 192
-    spriteID: 6071484c4b090453fb8cd9cd2820e220
+    spriteID: 9ad0ac75b4cea4c8ab0c271c73c57335
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -559,7 +559,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 404, y: 204}
-  - name: StormHead_Frame_22
+  - name: sci ball and chain_Frame_22
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -570,7 +570,7 @@ ScriptedImporter:
       y: 404
       width: 192
       height: 192
-    spriteID: 8daa6e39853c44afab47d8e149265a8b
+    spriteID: 7905317ff09e44a46803ea96fbc25ee9
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -579,7 +579,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 404, y: 404}
-  - name: StormHead_Frame_23
+  - name: sci ball and chain_Frame_23
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -590,7 +590,7 @@ ScriptedImporter:
       y: 604
       width: 192
       height: 192
-    spriteID: 7f935fbc8484546dbb47d5ff84e086e1
+    spriteID: 7798389e91fea4027a6cd47381c58197
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -599,7 +599,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 404, y: 604}
-  - name: StormHead_Frame_24
+  - name: sci ball and chain_Frame_24
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -610,7 +610,7 @@ ScriptedImporter:
       y: 804
       width: 192
       height: 192
-    spriteID: a6c3de8e817b64c8a99563974b536552
+    spriteID: 068ab31c8fd4a4f2c8b15bd75ac68d4d
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -619,7 +619,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 404, y: 804}
-  - name: StormHead_Frame_25
+  - name: sci ball and chain_Frame_25
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -630,7 +630,7 @@ ScriptedImporter:
       y: 1004
       width: 192
       height: 192
-    spriteID: e373c8743c4ad4c19aa61e756eb3f43a
+    spriteID: 69fee1efac2504de685bb1045b284d67
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -639,7 +639,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 404, y: 1004}
-  - name: StormHead_Frame_26
+  - name: sci ball and chain_Frame_26
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -650,7 +650,7 @@ ScriptedImporter:
       y: 1204
       width: 192
       height: 192
-    spriteID: ba59584ccda2a4109a647efae80ca03e
+    spriteID: b4bb69c6884774ea1a11e4ac4bd7441a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -659,7 +659,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 404, y: 1204}
-  - name: StormHead_Frame_27
+  - name: sci ball and chain_Frame_27
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -670,7 +670,7 @@ ScriptedImporter:
       y: 1404
       width: 192
       height: 192
-    spriteID: f6e1c284e36ad49b5a27146fc7e5d24b
+    spriteID: af039d42e32a849ce8e4450c258ba528
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -679,7 +679,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 404, y: 1404}
-  - name: StormHead_Frame_28
+  - name: sci ball and chain_Frame_28
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -690,7 +690,7 @@ ScriptedImporter:
       y: 1604
       width: 192
       height: 192
-    spriteID: 1009d93c5d0ef46a08abfaa091e2dadc
+    spriteID: 813a1030206104d8c856febe30ae053e
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -699,7 +699,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 404, y: 1604}
-  - name: StormHead_Frame_29
+  - name: sci ball and chain_Frame_29
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -710,7 +710,7 @@ ScriptedImporter:
       y: 1804
       width: 192
       height: 192
-    spriteID: c7ae001cb61074ec38db8a675e039455
+    spriteID: 94007f144aaef48e29a7f92269afbe36
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -719,7 +719,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 404, y: 1804}
-  - name: StormHead_Frame_30
+  - name: sci ball and chain_Frame_30
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -730,7 +730,7 @@ ScriptedImporter:
       y: 4
       width: 192
       height: 192
-    spriteID: d81f05253de80401c98c13fea60322b2
+    spriteID: 1a141f079cb2f4c168c9eb2a1368d75a
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -739,7 +739,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 604, y: 4}
-  - name: StormHead_Frame_31
+  - name: sci ball and chain_Frame_31
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -750,7 +750,7 @@ ScriptedImporter:
       y: 204
       width: 192
       height: 192
-    spriteID: 8843ceda3c5fa43d49670808b78f5ad4
+    spriteID: 82d806277b6ff40a8a516b7ee89cd03f
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -759,7 +759,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 604, y: 204}
-  - name: StormHead_Frame_32
+  - name: sci ball and chain_Frame_32
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -770,7 +770,7 @@ ScriptedImporter:
       y: 404
       width: 192
       height: 192
-    spriteID: 1fade9ceb57fc4b6cb9df00072dbd605
+    spriteID: 9efa58b4a42444e339b0d405d6c3acb8
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -779,7 +779,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 604, y: 404}
-  - name: StormHead_Frame_33
+  - name: sci ball and chain_Frame_33
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -790,7 +790,7 @@ ScriptedImporter:
       y: 604
       width: 192
       height: 192
-    spriteID: 36f2acc48c9b34f00956e3b6e2551852
+    spriteID: c20f2ccf07d2f4a979f9dbefaa4851f9
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -799,7 +799,7 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 604, y: 604}
-  - name: StormHead_Frame_34
+  - name: sci ball and chain_Frame_34
     originalName: 
     pivot: {x: 0.5, y: 0}
     alignment: 9
@@ -810,7 +810,7 @@ ScriptedImporter:
       y: 804
       width: 192
       height: 192
-    spriteID: a25dd25000d09469f9fd9170d7791e54
+    spriteID: e889d583beebc4364a1f72033c473d7c
     spriteBone: []
     spriteOutline: []
     vertices: []
@@ -819,771 +819,295 @@ ScriptedImporter:
     edges: []
     tessellationDetail: 0
     uvTransform: {x: 604, y: 804}
-  - name: StormHead_Frame_35
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 604
-      y: 1004
-      width: 192
-      height: 192
-    spriteID: 91a489b873e704a4fa0174810259793e
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 604, y: 1004}
-  - name: StormHead_Frame_36
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 604
-      y: 1204
-      width: 192
-      height: 192
-    spriteID: 7db279e81a89f483aac8e46e3f64392a
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 604, y: 1204}
-  - name: StormHead_Frame_37
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 604
-      y: 1404
-      width: 192
-      height: 192
-    spriteID: 8461f3dff21a5463f86f5a99f00f57d1
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 604, y: 1404}
-  - name: StormHead_Frame_38
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 604
-      y: 1604
-      width: 192
-      height: 192
-    spriteID: c5afe44528c1b47df8140bc14e0a6333
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 604, y: 1604}
-  - name: StormHead_Frame_39
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 604
-      y: 1804
-      width: 192
-      height: 192
-    spriteID: f10912382717745899ad9575667d7be9
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 604, y: 1804}
-  - name: StormHead_Frame_40
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 804
-      y: 4
-      width: 192
-      height: 192
-    spriteID: 81a6d0c14a875408d9a9238b5fc9ac9d
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 804, y: 4}
-  - name: StormHead_Frame_41
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 804
-      y: 204
-      width: 192
-      height: 192
-    spriteID: 4c51c16dc1745495f9d131a70e37148a
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 804, y: 204}
-  - name: StormHead_Frame_42
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 804
-      y: 404
-      width: 192
-      height: 192
-    spriteID: 0357c4393acbf4667aaf16dfc05aa017
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 804, y: 404}
-  - name: StormHead_Frame_43
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 804
-      y: 604
-      width: 192
-      height: 192
-    spriteID: 7e8a83dee43514683b49471d91e99e9e
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 804, y: 604}
-  - name: StormHead_Frame_44
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 804
-      y: 804
-      width: 192
-      height: 192
-    spriteID: 80953129f340140769e8ed9d51601747
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 804, y: 804}
-  - name: StormHead_Frame_45
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 804
-      y: 1004
-      width: 192
-      height: 192
-    spriteID: 75dc73616c1314d4bbfb70951f2ffcc2
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 804, y: 1004}
-  - name: StormHead_Frame_46
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 804
-      y: 1204
-      width: 192
-      height: 192
-    spriteID: 9b35564df64854ec08440b39b323027e
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 804, y: 1204}
-  - name: StormHead_Frame_47
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 804
-      y: 1404
-      width: 192
-      height: 192
-    spriteID: 8316352d0a33a4c2b8224eb3277b7e2e
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 804, y: 1404}
-  - name: StormHead_Frame_48
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 804
-      y: 1604
-      width: 192
-      height: 192
-    spriteID: 77bd9badddc2e4315866cf72a3147f2f
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 804, y: 1604}
-  - name: StormHead_Frame_49
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 804
-      y: 1804
-      width: 192
-      height: 192
-    spriteID: 5f80ba6b7aff64436b18a6a5184f88fd
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 804, y: 1804}
-  - name: StormHead_Frame_50
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1004
-      y: 4
-      width: 192
-      height: 192
-    spriteID: 2d43abfc2c67240ffbc8e7d0844beb27
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1004, y: 4}
-  - name: StormHead_Frame_51
-    originalName: 
-    pivot: {x: 0.5, y: 0}
-    alignment: 9
-    border: {x: 0, y: 0, z: 0, w: 0}
-    rect:
-      serializedVersion: 2
-      x: 1004
-      y: 204
-      width: 192
-      height: 192
-    spriteID: 6eb408905ba2f411997f3117613bd918
-    spriteBone: []
-    spriteOutline: []
-    vertices: []
-    spritePhysicsOutline: []
-    indices: 
-    edges: []
-    tessellationDetail: 0
-    uvTransform: {x: 1004, y: 204}
   spriteSheetImportData: []
   asepriteLayers:
   - layerIndex: 0
-    guid: 197202331
-    name: StormHead
+    guid: -1353637304
+    name: sci ball and chain
     layerFlags: 0
     layerType: 0
     blendMode: 0
     cells:
-    - name: StormHead_Frame_0
+    - name: sci ball and chain_Frame_0
       frameIndex: 0
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
-      spriteId: ff6217d27c6114d1da1c073664cb5c92
-    - name: StormHead_Frame_1
+      spriteId: ff41a9b49e89e404e9a0954ba08f20b4
+    - name: sci ball and chain_Frame_1
       frameIndex: 1
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
-      spriteId: 3ea52c47416204ef1a89ad867d78fb25
-    - name: StormHead_Frame_2
+      spriteId: bbce3c68f0fde4591a2a4fd066fbeae0
+    - name: sci ball and chain_Frame_2
       frameIndex: 2
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
-      spriteId: 25220ed7673284034aeaefb344426c79
-    - name: StormHead_Frame_3
+      spriteId: e1f76021e397b40479ad491f97ae8e53
+    - name: sci ball and chain_Frame_3
       frameIndex: 3
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
-      spriteId: 4d3c986272182499385216297ee5bbbf
-    - name: StormHead_Frame_4
+      spriteId: de27947be3b5d4e1f94dc878f46cb8ff
+    - name: sci ball and chain_Frame_4
       frameIndex: 4
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
-      spriteId: a1c9e0c168fd94740bdfa30784e90184
-    - name: StormHead_Frame_5
+      spriteId: f27174370d48c4e409db09a44623bb19
+    - name: sci ball and chain_Frame_5
       frameIndex: 5
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
-      spriteId: d8932dd783a494d71add8ac72b35c1db
-    - name: StormHead_Frame_6
+      spriteId: 2e9f72e738ed44bbc8379b90de8be304
+    - name: sci ball and chain_Frame_6
       frameIndex: 6
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
-      spriteId: b4edde1099d434e0b8e7d9cbbb32a63c
-    - name: StormHead_Frame_7
+      spriteId: c324aa88cb90d44a4a7be872002dee0b
+    - name: sci ball and chain_Frame_7
       frameIndex: 7
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
-      spriteId: 9797a4cb9c1744fc0b305019e104730b
-    - name: StormHead_Frame_8
+      spriteId: d331f0c141b314fbd94710edbc7b403f
+    - name: sci ball and chain_Frame_8
       frameIndex: 8
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
-      spriteId: 1df374150d1c24474a0d12f142c09de6
-    - name: StormHead_Frame_9
+      spriteId: 7b6ec77e1e6124b2f88ecec3f0f0952f
+    - name: sci ball and chain_Frame_9
       frameIndex: 9
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
-      spriteId: 181ca2b5d673749ccac47ada147ba084
-    - name: StormHead_Frame_10
+      spriteId: 4a8c99f5313c848d8869c370ede7fe89
+    - name: sci ball and chain_Frame_10
       frameIndex: 10
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
-      spriteId: 1b44853fb798549858951e9ac9d9a748
-    - name: StormHead_Frame_11
+      spriteId: 07d1eac4479c64acdae88dea5e7b8e4e
+    - name: sci ball and chain_Frame_11
       frameIndex: 11
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
-      spriteId: e070258f86af54080aedf611595772d5
-    - name: StormHead_Frame_12
+      spriteId: 44b96951982e44948965215bcf72ee2f
+    - name: sci ball and chain_Frame_12
       frameIndex: 12
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
-      spriteId: aa2a72337db504faf9c68358d607f335
-    - name: StormHead_Frame_13
+      spriteId: d543086639a8541e78d623c9b81b9614
+    - name: sci ball and chain_Frame_13
       frameIndex: 13
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
-      spriteId: 985c220a85741446481d626182a8d851
-    - name: StormHead_Frame_14
+      spriteId: 09c90b3de99aa4774803d5bfabee0d29
+    - name: sci ball and chain_Frame_14
       frameIndex: 14
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
-      spriteId: e4b7ed970f3a4482db9fb0557a43a0bf
-    - name: StormHead_Frame_15
+      spriteId: d3113325374214af9910c653e46ab353
+    - name: sci ball and chain_Frame_15
       frameIndex: 15
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
-      spriteId: 65e112a01893549e68d735e356d89236
-    - name: StormHead_Frame_16
+      spriteId: 6bd24cd8ccffe459cab58edf121d29cd
+    - name: sci ball and chain_Frame_16
       frameIndex: 16
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
-      spriteId: 763868ab34d7346a692c6c700bf88f41
-    - name: StormHead_Frame_17
+      spriteId: 07b221c366c4e4ea38f493b7d65044c5
+    - name: sci ball and chain_Frame_17
       frameIndex: 17
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
-      spriteId: 1e5e39fbfb843495d97f09a7af0fed44
-    - name: StormHead_Frame_18
+      spriteId: b7508468802934a5abd3a499d8ea94f4
+    - name: sci ball and chain_Frame_18
       frameIndex: 18
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
-      spriteId: 13227748484034273abcfbdfbec5cd32
-    - name: StormHead_Frame_19
+      spriteId: 4074ceba419b14c0b87a1e2340fa39e3
+    - name: sci ball and chain_Frame_19
       frameIndex: 19
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
-      spriteId: 4abed4c7001324259b27c48928b2164e
-    - name: StormHead_Frame_20
+      spriteId: eb9ec1c716c814f3eb95cf439b519487
+    - name: sci ball and chain_Frame_20
       frameIndex: 20
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
-      spriteId: 95e71c1c763704aad969c17b09a1e105
-    - name: StormHead_Frame_21
+      spriteId: 4014df394d6a14078989db4089a7b1f2
+    - name: sci ball and chain_Frame_21
       frameIndex: 21
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
-      spriteId: 6071484c4b090453fb8cd9cd2820e220
-    - name: StormHead_Frame_22
+      spriteId: 9ad0ac75b4cea4c8ab0c271c73c57335
+    - name: sci ball and chain_Frame_22
       frameIndex: 22
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
-      spriteId: 8daa6e39853c44afab47d8e149265a8b
-    - name: StormHead_Frame_23
+      spriteId: 7905317ff09e44a46803ea96fbc25ee9
+    - name: sci ball and chain_Frame_23
       frameIndex: 23
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
-      spriteId: 7f935fbc8484546dbb47d5ff84e086e1
-    - name: StormHead_Frame_24
+      spriteId: 7798389e91fea4027a6cd47381c58197
+    - name: sci ball and chain_Frame_24
       frameIndex: 24
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
-      spriteId: a6c3de8e817b64c8a99563974b536552
-    - name: StormHead_Frame_25
+      spriteId: 068ab31c8fd4a4f2c8b15bd75ac68d4d
+    - name: sci ball and chain_Frame_25
       frameIndex: 25
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
-      spriteId: e373c8743c4ad4c19aa61e756eb3f43a
-    - name: StormHead_Frame_26
+      spriteId: 69fee1efac2504de685bb1045b284d67
+    - name: sci ball and chain_Frame_26
       frameIndex: 26
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
-      spriteId: ba59584ccda2a4109a647efae80ca03e
-    - name: StormHead_Frame_27
+      spriteId: b4bb69c6884774ea1a11e4ac4bd7441a
+    - name: sci ball and chain_Frame_27
       frameIndex: 27
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
-      spriteId: f6e1c284e36ad49b5a27146fc7e5d24b
-    - name: StormHead_Frame_28
+      spriteId: af039d42e32a849ce8e4450c258ba528
+    - name: sci ball and chain_Frame_28
       frameIndex: 28
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
-      spriteId: 1009d93c5d0ef46a08abfaa091e2dadc
-    - name: StormHead_Frame_29
+      spriteId: 813a1030206104d8c856febe30ae053e
+    - name: sci ball and chain_Frame_29
       frameIndex: 29
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
-      spriteId: c7ae001cb61074ec38db8a675e039455
-    - name: StormHead_Frame_30
+      spriteId: 94007f144aaef48e29a7f92269afbe36
+    - name: sci ball and chain_Frame_30
       frameIndex: 30
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
-      spriteId: d81f05253de80401c98c13fea60322b2
-    - name: StormHead_Frame_31
+      spriteId: 1a141f079cb2f4c168c9eb2a1368d75a
+    - name: sci ball and chain_Frame_31
       frameIndex: 31
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
-      spriteId: 8843ceda3c5fa43d49670808b78f5ad4
-    - name: StormHead_Frame_32
+      spriteId: 82d806277b6ff40a8a516b7ee89cd03f
+    - name: sci ball and chain_Frame_32
       frameIndex: 32
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
-      spriteId: 1fade9ceb57fc4b6cb9df00072dbd605
-    - name: StormHead_Frame_33
+      spriteId: 9efa58b4a42444e339b0d405d6c3acb8
+    - name: sci ball and chain_Frame_33
       frameIndex: 33
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
-      spriteId: 36f2acc48c9b34f00956e3b6e2551852
-    - name: StormHead_Frame_34
+      spriteId: c20f2ccf07d2f4a979f9dbefaa4851f9
+    - name: sci ball and chain_Frame_34
       frameIndex: 34
       cellRect:
         x: 0
         y: 0
         width: 192
         height: 192
-      spriteId: a25dd25000d09469f9fd9170d7791e54
-    - name: StormHead_Frame_35
-      frameIndex: 35
-      cellRect:
-        x: 0
-        y: 0
-        width: 192
-        height: 192
-      spriteId: 91a489b873e704a4fa0174810259793e
-    - name: StormHead_Frame_36
-      frameIndex: 36
-      cellRect:
-        x: 0
-        y: 0
-        width: 192
-        height: 192
-      spriteId: 7db279e81a89f483aac8e46e3f64392a
-    - name: StormHead_Frame_37
-      frameIndex: 37
-      cellRect:
-        x: 0
-        y: 0
-        width: 192
-        height: 192
-      spriteId: 8461f3dff21a5463f86f5a99f00f57d1
-    - name: StormHead_Frame_38
-      frameIndex: 38
-      cellRect:
-        x: 0
-        y: 0
-        width: 192
-        height: 192
-      spriteId: c5afe44528c1b47df8140bc14e0a6333
-    - name: StormHead_Frame_39
-      frameIndex: 39
-      cellRect:
-        x: 0
-        y: 0
-        width: 192
-        height: 192
-      spriteId: f10912382717745899ad9575667d7be9
-    - name: StormHead_Frame_40
-      frameIndex: 40
-      cellRect:
-        x: 0
-        y: 0
-        width: 192
-        height: 192
-      spriteId: 81a6d0c14a875408d9a9238b5fc9ac9d
-    - name: StormHead_Frame_41
-      frameIndex: 41
-      cellRect:
-        x: 0
-        y: 0
-        width: 192
-        height: 192
-      spriteId: 4c51c16dc1745495f9d131a70e37148a
-    - name: StormHead_Frame_42
-      frameIndex: 42
-      cellRect:
-        x: 0
-        y: 0
-        width: 192
-        height: 192
-      spriteId: 0357c4393acbf4667aaf16dfc05aa017
-    - name: StormHead_Frame_43
-      frameIndex: 43
-      cellRect:
-        x: 0
-        y: 0
-        width: 192
-        height: 192
-      spriteId: 7e8a83dee43514683b49471d91e99e9e
-    - name: StormHead_Frame_44
-      frameIndex: 44
-      cellRect:
-        x: 0
-        y: 0
-        width: 192
-        height: 192
-      spriteId: 80953129f340140769e8ed9d51601747
-    - name: StormHead_Frame_45
-      frameIndex: 45
-      cellRect:
-        x: 0
-        y: 0
-        width: 192
-        height: 192
-      spriteId: 75dc73616c1314d4bbfb70951f2ffcc2
-    - name: StormHead_Frame_46
-      frameIndex: 46
-      cellRect:
-        x: 0
-        y: 0
-        width: 192
-        height: 192
-      spriteId: 9b35564df64854ec08440b39b323027e
-    - name: StormHead_Frame_47
-      frameIndex: 47
-      cellRect:
-        x: 0
-        y: 0
-        width: 192
-        height: 192
-      spriteId: 8316352d0a33a4c2b8224eb3277b7e2e
-    - name: StormHead_Frame_48
-      frameIndex: 48
-      cellRect:
-        x: 0
-        y: 0
-        width: 192
-        height: 192
-      spriteId: 77bd9badddc2e4315866cf72a3147f2f
-    - name: StormHead_Frame_49
-      frameIndex: 49
-      cellRect:
-        x: 0
-        y: 0
-        width: 192
-        height: 192
-      spriteId: 5f80ba6b7aff64436b18a6a5184f88fd
-    - name: StormHead_Frame_50
-      frameIndex: 50
-      cellRect:
-        x: 0
-        y: 0
-        width: 192
-        height: 192
-      spriteId: 2d43abfc2c67240ffbc8e7d0844beb27
-    - name: StormHead_Frame_51
-      frameIndex: 51
-      cellRect:
-        x: 0
-        y: 0
-        width: 192
-        height: 192
-      spriteId: 6eb408905ba2f411997f3117613bd918
+      spriteId: e889d583beebc4364a1f72033c473d7c
     linkedCells: []
     parentIndex: -1
   platformSettings: []
