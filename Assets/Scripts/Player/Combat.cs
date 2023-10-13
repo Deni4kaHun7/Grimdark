@@ -7,6 +7,7 @@ public class Combat : MonoBehaviour
     private PlayerControls playerControls;
     private Animator animator;
     [SerializeField] private Transform weaponCollider;
+    private float dirX;
 
     private void Awake() {
         playerControls = new PlayerControls();
@@ -21,6 +22,10 @@ public class Combat : MonoBehaviour
         playerControls.Combat.Attack.started += _ => Attack();
     }
 
+    private void Update() {
+        FlipColliderDirection();
+    }
+
     private void Attack(){
         animator.SetTrigger("attack");
 
@@ -29,5 +34,15 @@ public class Combat : MonoBehaviour
 
     public void DoneAttackingAnimEvent(){
         weaponCollider.gameObject.SetActive(false);
+    }
+
+    public void FlipColliderDirection(){
+        dirX = Input.GetAxisRaw("Horizontal");
+
+        if (dirX < 0f){
+            weaponCollider.transform.rotation = Quaternion.Euler(0, -180, 0);
+        } else if (dirX > 0f){
+            weaponCollider.transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
     }
 }
