@@ -7,6 +7,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float changeRoamingDirFloat = 2f;
     //[SerializeField] private MonoBehaviour enemyType;
     [SerializeField] private float attackCoolDown = 2f;
+    [SerializeField] private float attackRange = 1f;
     
     private bool canAttack = true;
     //enum is like a list of different states that enemy can have. Later I will use it to tell my enemy what to do if he has a specific type of State
@@ -28,9 +29,14 @@ public class EnemyAI : MonoBehaviour
     }
 
     private void Start() {
-        StartCoroutine(RoamingRoutine());
+        roamPosition = GetRoamingPosition();
     }
 
+    private void Update() {
+        MovementStateControl();
+    }
+
+    /*
     private IEnumerator RoamingRoutine() {
         while (state == State.Roaming)
         {
@@ -38,7 +44,7 @@ public class EnemyAI : MonoBehaviour
             enemyPathfinding.MoveTo(roamPosition);
             yield return new WaitForSeconds(2f);
         }
-    }
+    }*/
 
     private void MovementStateControl(){
         switch (state){
@@ -57,11 +63,16 @@ public class EnemyAI : MonoBehaviour
     private void Roaming(){
         timeRoaming += Time.deltaTime;
 
-        enemyPathfinding.MoveTo(GetRoamingPosition());
+        enemyPathfinding.MoveTo(roamPosition);
 
-        if(timeRoaming >= changeRoamingDirFloat){
+        if(Vector2.Distance(Player_Movement.Instance.transform.position, transform.position) < attackRange){
+            state = State.Attacking;
+        }
+
+        if(timeRoaming > changeRoamingDirFloat){
             roamPosition = GetRoamingPosition();
         }
+        Debug.Log("roaming");
     }
 
     private Vector2 GetRoamingPosition(){
@@ -70,12 +81,26 @@ public class EnemyAI : MonoBehaviour
     }
 
     private void Attacking(){
+        Debug.Log("attacking");
+        timeRoaming += Time.deltaTime;
+
+        enemyPathfinding.MoveTo(roamPosition);
+
+        if(Vector2.Distance(Player_Movement.Instance.transform.position, transform.position) > attackRange){
+            state = State.Roaming;
+        }
+
+        if(timeRoaming > changeRoamingDirFloat){
+            roamPosition = Player_Movement.Instance.transform.position - transform.position;
+        }
+
+        /*
         if(canAttack){
             canAttack = false;
             //(enemyType as IEnemy).Attack();
 
             StartCoroutine(AttackCoolDownRoutine());
-        }
+        }*/
     }
 
     private IEnumerator AttackCoolDownRoutine(){
