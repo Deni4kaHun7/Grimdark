@@ -60997,6 +60997,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   startHealth: 3
   knockBackThrust: 15
+  deathTime: 1
 --- !u!1001 &1253361490
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -63337,6 +63338,10 @@ PrefabInstance:
     - target: {fileID: 1950798541434213186, guid: 61d0c3b4f26a6498b9f9832e2a5b0b6b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2661079764483632281, guid: 61d0c3b4f26a6498b9f9832e2a5b0b6b, type: 3}
+      propertyPath: deathTime
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 2661079764483632281, guid: 61d0c3b4f26a6498b9f9832e2a5b0b6b, type: 3}
       propertyPath: knockBackThrust
