@@ -2,17 +2,25 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyPathFinding : MonoBehaviour
+public class EnemyPathfinding : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    [SerializeField] private float movementSpeed = 2f;
+    private Rigidbody2D rb;
+    private Vector2 moveDir;
+    private Knockback knockback;
+    
+    private void Awake() {
+        rb = GetComponent<Rigidbody2D>();
+        knockback = GetComponent<Knockback>();   
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    private void FixedUpdate() {
+        if(knockback.gettingKnockedBack){ return ;}
+
+        rb.MovePosition(rb.position + moveDir * (Time.deltaTime * movementSpeed));
+    }
+
+    public void MoveTo(Vector2 targetedDir){
+        moveDir = targetedDir;
     }
 }
