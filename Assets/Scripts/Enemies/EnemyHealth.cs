@@ -8,6 +8,7 @@ public class EnemyHealth : MonoBehaviour
     [SerializeField] private float knockBackThrust = 15f;
     private int currentHealth;
     private Knockback knockback;
+    readonly int FLASH_HASH = Animator.StringToHash("flash");
 
     private void Awake() {
         knockback = GetComponent<Knockback>();    
@@ -20,6 +21,7 @@ public class EnemyHealth : MonoBehaviour
     public void TakeDamage(int damage){
         currentHealth -= damage;
         Debug.Log(currentHealth);
+        GetComponent<Animator>().SetTrigger(FLASH_HASH);
         knockback.GetKnockedBack(Player_Movement.Instance.transform , knockBackThrust);
         DetectDeath();
     }
