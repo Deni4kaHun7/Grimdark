@@ -40,8 +40,4 @@ public class EnemyHealth : MonoBehaviour
         yield return new WaitForSeconds(deathTime);
         Destroy(gameObject);
     }
-
-    private void DestroySelf(){
-        //Destroy(gameObject);
-    }
 }

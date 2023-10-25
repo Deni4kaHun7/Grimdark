@@ -123,34 +123,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: hit_0
-      rect:
-        serializedVersion: 2
-        x: 55
-        y: 46
-        width: 23
-        height: 25
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 98d8384a9371b497cae1cc737599cb84
-      internalID: -1502217241
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: hit_1
       rect:
         serializedVersion: 2
-        x: 53
-        y: 7
-        width: 23
-        height: 25
+        x: 44
+        y: 39
+        width: 44
+        height: 39
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -160,6 +139,27 @@ TextureImporter:
       bones: []
       spriteID: 61b7b48c3064746cab537e056a56e38b
       internalID: -1226296255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hit_3
+      rect:
+        serializedVersion: 2
+        x: 44
+        y: 0
+        width: 44
+        height: 39
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bf080f5d505b402880ac5978c0e6f03
+      internalID: 980690570
       vertices: []
       indices: 
       edges: []
@@ -177,6 +177,8 @@ TextureImporter:
     nameFileIdTable:
       hit_0: -1502217241
       hit_1: -1226296255
+      hit_2: 1778394075
+      hit_3: 980690570
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

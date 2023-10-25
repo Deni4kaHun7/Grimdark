@@ -63251,6 +63251,26 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 29967167640620092, guid: 61d0c3b4f26a6498b9f9832e2a5b0b6b, type: 3}
+      propertyPath: m_Size.x
+      value: 1.375
+      objectReference: {fileID: 0}
+    - target: {fileID: 29967167640620092, guid: 61d0c3b4f26a6498b9f9832e2a5b0b6b, type: 3}
+      propertyPath: m_Size.y
+      value: 1.21875
+      objectReference: {fileID: 0}
+    - target: {fileID: 29967167640620092, guid: 61d0c3b4f26a6498b9f9832e2a5b0b6b, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 257658456, guid: a08cf808882ec472e95b67bf64e6901d, type: 3}
+    - target: {fileID: 29967167640620092, guid: 61d0c3b4f26a6498b9f9832e2a5b0b6b, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 928645658776317851, guid: 61d0c3b4f26a6498b9f9832e2a5b0b6b, type: 3}
+      propertyPath: attackRange
+      value: 2.75
+      objectReference: {fileID: 0}
     - target: {fileID: 1950798541434213186, guid: 61d0c3b4f26a6498b9f9832e2a5b0b6b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 22.6
@@ -63296,7 +63316,8 @@ PrefabInstance:
       value: Bandit
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 6908729882989075551, guid: 61d0c3b4f26a6498b9f9832e2a5b0b6b, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61d0c3b4f26a6498b9f9832e2a5b0b6b, type: 3}
