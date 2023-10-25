@@ -106,7 +106,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 3
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: a27b8b6935fd6a94385da6b130b9de00, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -179,6 +179,9 @@ MonoBehaviour:
     m_Bits: 64
   jump_speed: 7
   movement_speed: 4
+  dashSpeed: 10
+  dashDuration: 1
+  dashCooldown: 1
 --- !u!95 &7436048567321894292
 Animator:
   serializedVersion: 5
