@@ -22,7 +22,7 @@ public class EnemyHealth : MonoBehaviour
 
     public void TakeDamage(int damage){
         currentHealth -= damage;
-        Debug.Log(currentHealth);
+        Debug.Log("plyaer" + currentHealth);
         GetComponent<Animator>().SetTrigger(FLASH_HASH); 
         knockback.GetKnockedBack(Player_Movement.Instance.transform , knockBackThrust);
         DetectDeath();

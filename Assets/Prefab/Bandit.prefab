@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 928645658776317851}
   - component: {fileID: 7261593564283895676}
   - component: {fileID: 1415107443748856736}
+  - component: {fileID: 6230647108575100758}
   m_Layer: 0
   m_Name: Bandit
   m_TagString: Enemy
@@ -37,7 +38,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 6934076630796549377}
+  - {fileID: 4055970138555591897}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &29967167640620092
@@ -81,12 +82,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 481845346, guid: a08cf808882ec472e95b67bf64e6901d, type: 3}
+  m_Sprite: {fileID: 257658456, guid: a08cf808882ec472e95b67bf64e6901d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.375, y: 1.21875}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -155,8 +156,8 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.6875, y: 0.75}
-    newSize: {x: 1, y: 1}
+    oldSize: {x: 1.375, y: 1.21875}
+    newSize: {x: 1.375, y: 1.21875}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -213,8 +214,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   changeRoamingDirFloat: 2
+  enemyType: {fileID: 6230647108575100758}
   attackCoolDown: 2
-  attackRange: 1
+  attackRange: 2.75
 --- !u!114 &7261593564283895676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -240,7 +242,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc3cf7b4eb24e493eb34f4abe69695f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!1 &6908729882989075551
+--- !u!114 &6230647108575100758
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2955607810801566273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1c6507a0e36543c4bb04c077c421410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 7420187744596378932}
+  weaponCollider: {fileID: 4055970138555591897}
+--- !u!1 &6025988365519733334
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -248,9 +264,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6934076630796549377}
-  - component: {fileID: 9003521531150951274}
-  - component: {fileID: 3223118504267211877}
+  - component: {fileID: 4055970138555591897}
+  - component: {fileID: 7883282057824791837}
+  - component: {fileID: 4358571399405346750}
   m_Layer: 0
   m_Name: WeaponCollider
   m_TagString: Untagged
@@ -258,28 +274,28 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6934076630796549377
+--- !u!4 &4055970138555591897
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6908729882989075551}
+  m_GameObject: {fileID: 6025988365519733334}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.06233406, y: 0.05367732, z: 0}
+  m_LocalPosition: {x: -1.2484035, y: -0.5204966, z: 0.001730545}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1950798541434213186}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!60 &9003521531150951274
+--- !u!60 &7883282057824791837
 PolygonCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6908729882989075551}
+  m_GameObject: {fileID: 6025988365519733334}
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
@@ -323,13 +339,13 @@ PolygonCollider2D:
       - {x: 0.58778536, y: -0.80901694}
       - {x: 0.9510565, y: 0.30901712}
   m_UseDelaunayMesh: 0
---- !u!114 &3223118504267211877
+--- !u!114 &4358571399405346750
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6908729882989075551}
+  m_GameObject: {fileID: 6025988365519733334}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c8ba0991d90944cbfa1a79ea928f5f5c, type: 3}

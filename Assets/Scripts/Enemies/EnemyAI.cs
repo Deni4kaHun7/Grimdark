@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyAI : MonoBehaviour
 {   
     [SerializeField] private float changeRoamingDirFloat = 2f;
-    //[SerializeField] private MonoBehaviour enemyType;
+    [SerializeField] private MonoBehaviour enemyType;
     [SerializeField] private float attackCoolDown = 2f;
     [SerializeField] private float attackRange = 1f;
     
@@ -81,10 +81,10 @@ public class EnemyAI : MonoBehaviour
     }
 
     private void Attacking(){
-        Debug.Log("attacking");
         timeRoaming += Time.deltaTime;
 
         enemyPathfinding.MoveTo(roamPosition);
+
 
         if(Vector2.Distance(Player_Movement.Instance.transform.position, transform.position) > attackRange){
             state = State.Roaming;
@@ -94,13 +94,12 @@ public class EnemyAI : MonoBehaviour
             roamPosition = Player_Movement.Instance.transform.position - transform.position;
         }
 
-        /*
         if(canAttack){
             canAttack = false;
-            //(enemyType as IEnemy).Attack();
+            (enemyType as IEnemy).Attack();
 
             StartCoroutine(AttackCoolDownRoutine());
-        }*/
+        }
     }
 
     private IEnumerator AttackCoolDownRoutine(){
