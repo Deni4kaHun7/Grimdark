@@ -14,11 +14,10 @@ GameObject:
   - component: {fileID: 8314427213507174403}
   - component: {fileID: 2661079764483632281}
   - component: {fileID: 7420187744596378932}
-  - component: {fileID: 928645658776317851}
   - component: {fileID: 7261593564283895676}
   - component: {fileID: 1415107443748856736}
-  - component: {fileID: 6230647108575100758}
   - component: {fileID: 227913832976107655}
+  - component: {fileID: 6009628580168348441}
   m_Layer: 0
   m_Name: Bandit
   m_TagString: Enemy
@@ -120,7 +119,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 0
   m_CollisionDetection: 1
-  m_Constraints: 4
+  m_Constraints: 6
 --- !u!61 &8314427213507174403
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -202,22 +201,6 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!114 &928645658776317851
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2955607810801566273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 08b2759eb112d4fe498562b65dbc47a8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  changeRoamingDirFloat: 2
-  enemyType: {fileID: 6230647108575100758}
-  attackCoolDown: 2
-  attackRange: 1.31
 --- !u!114 &7261593564283895676
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -243,20 +226,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc3cf7b4eb24e493eb34f4abe69695f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &6230647108575100758
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2955607810801566273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c1c6507a0e36543c4bb04c077c421410, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  animator: {fileID: 7420187744596378932}
-  weaponCollider: {fileID: 4055970138555591897}
 --- !u!114 &227913832976107655
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -270,6 +239,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponCollider: {fileID: 4055970138555591897}
+--- !u!114 &6009628580168348441
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2955607810801566273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08b2759eb112d4fe498562b65dbc47a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  changeRoamingDirFloat: 2
+  attackCoolDown: 2
+  roamingCoolDown: 10
+  attackRange: 1
 --- !u!1 &6025988365519733334
 GameObject:
   m_ObjectHideFlags: 0
