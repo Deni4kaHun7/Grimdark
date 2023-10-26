@@ -15,9 +15,12 @@ GameObject:
   - component: {fileID: 2464222044056172153}
   - component: {fileID: 7436048567321894292}
   - component: {fileID: 3938344433181063076}
+  - component: {fileID: 8614074108805789124}
+  - component: {fileID: 1301097944412958407}
+  - component: {fileID: 8622640793098133817}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -177,7 +180,7 @@ MonoBehaviour:
   jumpableGround:
     serializedVersion: 2
     m_Bits: 64
-  jump_speed: 7
+  jump_speed: 9
   movement_speed: 4
 --- !u!95 &7436048567321894292
 Animator:
@@ -213,6 +216,45 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponCollider: {fileID: 5441273816679490047}
+--- !u!114 &8614074108805789124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4098329329138791650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e5fbded06ca9a243a4847487924260a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1301097944412958407
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4098329329138791650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b4cf99c2c5624e6785cfe0a76759795, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startHealth: 2
+  knockBackThrust: 15
+  deathTime: 1
+--- !u!114 &8622640793098133817
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4098329329138791650}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc3cf7b4eb24e493eb34f4abe69695f9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &9046236780148894903
 GameObject:
   m_ObjectHideFlags: 0
@@ -290,14 +332,14 @@ PolygonCollider2D:
   m_AutoTiling: 0
   m_Points:
     m_Paths:
-    - - {x: 0.9902191, y: 0.5129192}
-      - {x: 0.10947704, y: 0.40686607}
+    - - {x: 0.8876629, y: 0.29315352}
+      - {x: 0.13145351, y: 0.34093642}
       - {x: 0.18937296, y: 0.32741097}
-      - {x: 0.18364006, y: -0.29268372}
-      - {x: 1.0854002, y: -0.31646037}
-      - {x: 1.1337786, y: -0.22186661}
-      - {x: 1.1753273, y: -0.08831215}
-      - {x: 1.0763283, y: 0.036219597}
+      - {x: 0.322825, y: -0.23407948}
+      - {x: 0.84365904, y: -0.20657754}
+      - {x: 1.0019197, y: -0.097332716}
+      - {x: 1.065445, y: -0.05901003}
+      - {x: 1.1495838, y: 0.050870657}
       - {x: 1.1258278, y: 0.182033}
   m_UseDelaunayMesh: 0
 --- !u!114 &244069503154653243
