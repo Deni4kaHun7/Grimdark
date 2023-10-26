@@ -9,6 +9,7 @@ public class Player_Movement : MonoBehaviour
     private BoxCollider2D coll;
     private SpriteRenderer sprite;
     private Animator animator;
+    public static Player_Movement Instance;
 
     [SerializeField] private LayerMask jumpableGround;
 
@@ -22,6 +23,7 @@ public class Player_Movement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Instance = this;
         rb = GetComponent<Rigidbody2D>();
         coll = GetComponent<BoxCollider2D>();
         sprite = rb.GetComponent<SpriteRenderer>();

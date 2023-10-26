@@ -4,14 +4,17 @@ using UnityEngine;
 
 public class Combat : MonoBehaviour
 {
+    [SerializeField] private Transform weaponCollider;
     private PlayerControls playerControls;
     private Animator animator;
-    [SerializeField] private Transform weaponCollider;
     private float dirX;
+    private EnemyPathfinding enemyPathfinding;
+    private Vector2 moveDir;
 
     private void Awake() {
         playerControls = new PlayerControls();
         animator = GetComponent<Animator>();
+        enemyPathfinding = GetComponent<EnemyPathfinding>();
     }
 
     private void OnEnable() {
@@ -23,10 +26,10 @@ public class Combat : MonoBehaviour
     }
 
     private void Update() {
-        FlipColliderDirection();
+        FlipColliderDirectionPlayer();
     }
 
-    private void Attack(){
+    public void Attack(){
         animator.SetTrigger("attack");
 
         weaponCollider.gameObject.SetActive(true);
@@ -36,12 +39,21 @@ public class Combat : MonoBehaviour
         weaponCollider.gameObject.SetActive(false);
     }
 
-    public void FlipColliderDirection(){
+    private void FlipColliderDirectionPlayer(){
         dirX = Input.GetAxisRaw("Horizontal");
 
         if (dirX < 0f){
-            weaponCollider.transform.rotation = Quaternion.Euler(0, -180, 0);
+            weaponCollider.transform.rotation = Quaternion.Euler(0, 180, 0);
         } else if (dirX > 0f){
+            weaponCollider.transform.rotation = Quaternion.Euler(0, 0, 0);
+        }
+    }
+
+    public void FlipColliderDirectionEnemy(){
+        moveDir = enemyPathfinding.moveDir;
+        if (moveDir.x > 0) {
+            weaponCollider.transform.rotation = Quaternion.Euler(0, -180, 0);
+        } else if (moveDir.x < 0) {
             weaponCollider.transform.rotation = Quaternion.Euler(0, 0, 0);
         }
     }
