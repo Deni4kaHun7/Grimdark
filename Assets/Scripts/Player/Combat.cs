@@ -27,7 +27,6 @@ public class Combat : MonoBehaviour
 
     private void Update() {
         FlipColliderDirectionPlayer();
-        FlipColliderDirectionEnemy();
     }
 
     public void Attack(){
@@ -40,7 +39,7 @@ public class Combat : MonoBehaviour
         weaponCollider.gameObject.SetActive(false);
     }
 
-    public void FlipColliderDirectionPlayer(){
+    private void FlipColliderDirectionPlayer(){
         dirX = Input.GetAxisRaw("Horizontal");
 
         if (dirX < 0f){
