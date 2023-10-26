@@ -19,4 +19,5 @@ public class Bandit : MonoBehaviour, IEnemy
     public void DoneAttackingAnimEvent(){
         weaponCollider.gameObject.SetActive(false);
     }
+
 }

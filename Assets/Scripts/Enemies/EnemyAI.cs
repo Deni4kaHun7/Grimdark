@@ -8,6 +8,7 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private MonoBehaviour enemyType;
     [SerializeField] private float attackCoolDown = 2f;
     [SerializeField] private float attackRange = 1f;
+    private Combat combat;
     
     private bool canAttack = true;
     //enum is like a list of different states that enemy can have. Later I will use it to tell my enemy what to do if he has a specific type of State
@@ -24,6 +25,7 @@ public class EnemyAI : MonoBehaviour
 
     private void Awake() {
         enemyPathfinding = GetComponent<EnemyPathfinding>();
+        combat = GetComponent<Combat>();
         //Default state of our enemy. He just roames the world
         state = State.Roaming;
     }
@@ -34,6 +36,7 @@ public class EnemyAI : MonoBehaviour
 
     private void Update() {
         MovementStateControl();
+        //combat.FlipColliderDirection();
     }
 
     /*
@@ -82,7 +85,7 @@ public class EnemyAI : MonoBehaviour
 
     private void Attacking(){
         timeRoaming += Time.deltaTime;
-
+        Debug.Log(Player_Movement.Instance.transform.position);
         enemyPathfinding.MoveTo(roamPosition);
 
 
@@ -96,7 +99,7 @@ public class EnemyAI : MonoBehaviour
 
         if(canAttack){
             canAttack = false;
-            (enemyType as IEnemy).Attack();
+            combat.Attack();
 
             StartCoroutine(AttackCoolDownRoutine());
         }
