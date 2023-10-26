@@ -31,6 +31,11 @@ public class EnemyPathfinding : MonoBehaviour
         
     }
 
+    public void StopMoving() {
+        moveDir = Vector3.zero;
+    }
+
+
     private void ChangeSpriteDir(){
         if (moveDir.x < 0) {
             spriteRenderer.flipX = true;

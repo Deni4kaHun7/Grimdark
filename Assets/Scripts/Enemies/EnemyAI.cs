@@ -6,6 +6,7 @@ public class EnemyAI : MonoBehaviour
 {   
     [SerializeField] private float changeRoamingDirFloat = 2f;
     [SerializeField] private float attackCoolDown = 2f;
+    [SerializeField] private float roamingCoolDown = 10f;
     [SerializeField] private float attackRange = 1f;
     private Combat combat;
     private bool canAttack = true;
@@ -49,23 +50,31 @@ public class EnemyAI : MonoBehaviour
     }
 
     private void Roaming(){
-        timeRoaming += Time.deltaTime;
-        
-        enemyPathfinding.MoveTo(roamPosition);
+        if(canRoam){
+            canRoam = false;
+            enemyPathfinding.MoveTo(roamPosition);
+            Debug.Log("fsfd"); 
+            StartCoroutine(RoamingCoolDownRoutine());
+        }
 
         if(Vector2.Distance(Player_Movement.Instance.transform.position, transform.position) < attackRange){
             roamPosition = Player_Movement.Instance.transform.position - transform.position;
             state = State.Attacking;
-        }
+            }
+    }
 
-        if(timeRoaming > changeRoamingDirFloat){
-            roamPosition = GetRoamingPosition();
-        }
+    private IEnumerator RoamingCoolDownRoutine(){
+        Debug.Log("routine");
+        yield return new WaitForSeconds(roamingCoolDown);
+        
+        roamPosition = GetRoamingPosition();
+        canRoam = true;
     }
 
     private Vector2 GetRoamingPosition(){
         timeRoaming = 0f;
-        return new Vector2(Random.Range(-5f,5f), 0).normalized;
+        enemyPathfinding.StopMoving();
+        return new Vector2(Random.Range(-.1f,.1f), 0).normalized;
     }
 
     private void Attacking(){
