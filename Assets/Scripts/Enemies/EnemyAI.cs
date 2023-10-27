@@ -4,11 +4,13 @@ using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
 {   
-    [SerializeField] private float changeRoamingDirFloat = 2f;
+    [SerializeField] private float changeRoamingDirFloat = 1f;
     [SerializeField] private float attackCoolDown = 2f;
-    [SerializeField] private float roamingCoolDown = 10f;
+    [SerializeField] private float roamingCoolDown = 2f;
     [SerializeField] private float attackRange = 1f;
-    private Combat combat;
+    private Vector2 leftDir = new Vector2(-1f, 0f);
+    private Vector2 rightDir = new Vector2(1f, 0f);
+    private Bandit bandit;
     private bool canAttack = true;
     private bool canRoam = true;
     //enum is like a list of different states that enemy can have. Later I will use it to tell my enemy what to do if he has a specific type of State
@@ -24,17 +26,16 @@ public class EnemyAI : MonoBehaviour
 
     private void Awake() {
         enemyPathfinding = GetComponent<EnemyPathfinding>();
-        combat = GetComponent<Combat>();
+        bandit = GetComponent<Bandit>();
         state = State.Roaming;
     }
 
     private void Start() {
-        roamPosition = GetRoamingPosition();
+        roamPosition = leftDir;
     }
 
     private void Update() {
         MovementStateControl();
-        combat.FlipColliderDirectionEnemy();
     }
 
     private void MovementStateControl(){
@@ -53,9 +54,10 @@ public class EnemyAI : MonoBehaviour
         if(canRoam){
             canRoam = false;
             enemyPathfinding.MoveTo(roamPosition);
-            Debug.Log("fsfd"); 
             StartCoroutine(RoamingCoolDownRoutine());
         }
+
+        
 
         if(Vector2.Distance(Player_Movement.Instance.transform.position, transform.position) < attackRange){
             roamPosition = Player_Movement.Instance.transform.position - transform.position;
@@ -64,40 +66,43 @@ public class EnemyAI : MonoBehaviour
     }
 
     private IEnumerator RoamingCoolDownRoutine(){
-        Debug.Log("routine");
-        yield return new WaitForSeconds(roamingCoolDown);
-        
-        roamPosition = GetRoamingPosition();
+        yield return new WaitForSeconds(1f);
+        enemyPathfinding.StopMoving();
+        yield return new WaitForSeconds(2f);
+
+        if(roamPosition == leftDir){
+            roamPosition = rightDir;
+        }else{
+            roamPosition = leftDir;
+        }
         canRoam = true;
     }
 
-    private Vector2 GetRoamingPosition(){
-        timeRoaming = 0f;
-        enemyPathfinding.StopMoving();
-        return new Vector2(Random.Range(-.1f,.1f), 0).normalized;
-    }
-
     private void Attacking(){
-        timeRoaming += Time.deltaTime;
-        enemyPathfinding.MoveTo(roamPosition);
-
-        if(Vector2.Distance(Player_Movement.Instance.transform.position, transform.position) > attackRange){
-            state = State.Roaming;
-        }
         
-        if(timeRoaming > changeRoamingDirFloat){
-            roamPosition = Player_Movement.Instance.transform.position - transform.position;
-        }
 
         if(canAttack){
             canAttack = false;
-            combat.Attack();
+            Debug.Log(roamPosition);
+            enemyPathfinding.MoveTo(roamPosition);
+            bandit.Attack();
+            
             StartCoroutine(AttackCoolDownRoutine());
+        }
+        
+        if(roamPosition.y < -.1){
+            enemyPathfinding.StopMoving();
+        }
+
+        if(Vector2.Distance(Player_Movement.Instance.transform.position, transform.position) > attackRange){
+            state = State.Roaming;
         }
     }
 
     private IEnumerator AttackCoolDownRoutine(){
         yield return new WaitForSeconds(attackCoolDown);
+        roamPosition = Player_Movement.Instance.transform.position - transform.position;
+        
         canAttack = true;
     }
 }

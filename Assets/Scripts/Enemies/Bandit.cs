@@ -2,30 +2,21 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Combat : MonoBehaviour
+public class Bandit : MonoBehaviour
 {
     [SerializeField] private Transform weaponCollider;
-    private PlayerControls playerControls;
     private Animator animator;
     private float dirX;
+    private EnemyPathfinding enemyPathfinding;
     private Vector2 moveDir;
 
     private void Awake() {
-        playerControls = new PlayerControls();
         animator = GetComponent<Animator>();
-    }
-
-    private void OnEnable() {
-        playerControls.Enable();   
-    }
-
-    private void Start() {
-        playerControls.Combat.Attack.started += _ => Attack();
-
+        enemyPathfinding = GetComponent<EnemyPathfinding>();
     }
 
     private void Update() {
-        FlipColliderDirectionPlayer();
+        FlipColliderDirection();
     }
 
     public void Attack(){
@@ -38,12 +29,11 @@ public class Combat : MonoBehaviour
         weaponCollider.gameObject.SetActive(false);
     }
 
-    private void FlipColliderDirectionPlayer(){
-        dirX = Input.GetAxisRaw("Horizontal");
-
-        if (dirX < 0f){
-            weaponCollider.transform.rotation = Quaternion.Euler(0, 180, 0);
-        } else if (dirX > 0f){
+    public void FlipColliderDirection(){
+        moveDir = enemyPathfinding.moveDir;
+        if (moveDir.x > 0) {
+            weaponCollider.transform.rotation = Quaternion.Euler(0, -180, 0);
+        } else if (moveDir.x < 0) {
             weaponCollider.transform.rotation = Quaternion.Euler(0, 0, 0);
         }
     }

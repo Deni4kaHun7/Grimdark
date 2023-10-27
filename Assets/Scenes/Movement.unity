@@ -60103,6 +60103,24 @@ Transform:
   - {fileID: 1370456658}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &387155752 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2955607810801566273, guid: 61d0c3b4f26a6498b9f9832e2a5b0b6b, type: 3}
+  m_PrefabInstance: {fileID: 5216615924019968570}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &387155763
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 387155752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1c6507a0e36543c4bb04c077c421410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponCollider: {fileID: 1808979704}
 --- !u!1 &420452907
 GameObject:
   m_ObjectHideFlags: 0
@@ -61334,6 +61352,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 420452908}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1808979704 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4055970138555591897, guid: 61d0c3b4f26a6498b9f9832e2a5b0b6b, type: 3}
+  m_PrefabInstance: {fileID: 5216615924019968570}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1844467018
 GameObject:
   m_ObjectHideFlags: 0
@@ -63148,6 +63171,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1301097944412958407, guid: add4bd776aaa029478bff34b658fc0e0, type: 3}
+      propertyPath: startHealth
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935499068449310635, guid: add4bd776aaa029478bff34b658fc0e0, type: 3}
+      propertyPath: m_Size.y
+      value: 0.57478786
+      objectReference: {fileID: 0}
+    - target: {fileID: 1935499068449310635, guid: add4bd776aaa029478bff34b658fc0e0, type: 3}
+      propertyPath: m_Offset.y
+      value: 0.028546691
+      objectReference: {fileID: 0}
     - target: {fileID: 4098329329138791650, guid: add4bd776aaa029478bff34b658fc0e0, type: 3}
       propertyPath: m_Name
       value: Player
@@ -63211,7 +63246,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1950798541434213186, guid: 61d0c3b4f26a6498b9f9832e2a5b0b6b, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -1.14
+      value: -2.605
       objectReference: {fileID: 0}
     - target: {fileID: 1950798541434213186, guid: 61d0c3b4f26a6498b9f9832e2a5b0b6b, type: 3}
       propertyPath: m_LocalPosition.z
@@ -63249,10 +63284,34 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bandit
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 6009628580168348441, guid: 61d0c3b4f26a6498b9f9832e2a5b0b6b, type: 3}
+      propertyPath: attackRange
+      value: 1.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 8314427213507174403, guid: 61d0c3b4f26a6498b9f9832e2a5b0b6b, type: 3}
+      propertyPath: m_Size.x
+      value: 0.430521
+      objectReference: {fileID: 0}
+    - target: {fileID: 8314427213507174403, guid: 61d0c3b4f26a6498b9f9832e2a5b0b6b, type: 3}
+      propertyPath: m_Size.y
+      value: 0.5217478
+      objectReference: {fileID: 0}
+    - target: {fileID: 8314427213507174403, guid: 61d0c3b4f26a6498b9f9832e2a5b0b6b, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.012526512
+      objectReference: {fileID: 0}
+    - target: {fileID: 8314427213507174403, guid: 61d0c3b4f26a6498b9f9832e2a5b0b6b, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.06841743
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 227913832976107655, guid: 61d0c3b4f26a6498b9f9832e2a5b0b6b, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2955607810801566273, guid: 61d0c3b4f26a6498b9f9832e2a5b0b6b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 387155763}
   m_SourcePrefab: {fileID: 100100000, guid: 61d0c3b4f26a6498b9f9832e2a5b0b6b, type: 3}
 --- !u!4 &6533966374443608435 stripped
 Transform:
