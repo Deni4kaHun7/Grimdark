@@ -27,17 +27,14 @@ public class EnemyPathfinding : MonoBehaviour
     }
 
     public void MoveTo(Vector2 targetedDir){
-        Debug.Log("called moveto "+ targetedDir);
-        moveDir = targetedDir;
-        
+        moveDir = targetedDir;  
     }
 
     public void StopMoving() {
         moveDir = Vector3.zero;
     }
 
-    private void ChangeSpriteDir(){
-        Debug.Log("moveDir "+ moveDir);
+    public void ChangeSpriteDir(){
         if (moveDir.x < 0) {
             spriteRenderer.flipX = true;
         } else if (moveDir.x > 0) {

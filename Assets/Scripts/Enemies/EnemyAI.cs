@@ -7,7 +7,8 @@ public class EnemyAI : MonoBehaviour
     [SerializeField] private float changeRoamingDirFloat = 1f;
     [SerializeField] private float attackCoolDown = 2f;
     [SerializeField] private float roamingCoolDown = 2f;
-    [SerializeField] private float attackRange = 1f;
+    [SerializeField] private float detectPlayerRange = 1.6f;
+    [SerializeField] private float attackRange = 1.1f;
     private Vector2 leftDir = new Vector2(-1f, 0f);
     private Vector2 rightDir = new Vector2(1f, 0f);
     private Bandit bandit;
@@ -57,9 +58,7 @@ public class EnemyAI : MonoBehaviour
             StartCoroutine(RoamingCoolDownRoutine());
         }
 
-        
-
-        if(Vector2.Distance(Player_Movement.Instance.transform.position, transform.position) < attackRange){
+        if(Vector2.Distance(Player_Movement.Instance.transform.position, transform.position) < detectPlayerRange){
             roamPosition = Player_Movement.Instance.transform.position - transform.position;
             state = State.Attacking;
             }
@@ -78,28 +77,29 @@ public class EnemyAI : MonoBehaviour
         canRoam = true;
     }
 
-    private void Attacking(){
-        
-
+    private void Attacking(){  
         if(canAttack){
             canAttack = false;
-            Debug.Log(roamPosition);
             enemyPathfinding.MoveTo(roamPosition);
             bandit.Attack();
             
             StartCoroutine(AttackCoolDownRoutine());
         }
         
-        if(roamPosition.y < -.1){
+        if(Vector2.Distance(Player_Movement.Instance.transform.position, transform.position) < attackRange){
+            bandit.FlipColliderDirection();
+            enemyPathfinding.ChangeSpriteDir();
             enemyPathfinding.StopMoving();
         }
+        Debug.Log(Vector2.Dot(roamPosition, transform.forward));
 
-        if(Vector2.Distance(Player_Movement.Instance.transform.position, transform.position) > attackRange){
+        if(Vector2.Distance(Player_Movement.Instance.transform.position, transform.position) > detectPlayerRange){
             state = State.Roaming;
         }
     }
 
     private IEnumerator AttackCoolDownRoutine(){
+        
         yield return new WaitForSeconds(attackCoolDown);
         roamPosition = Player_Movement.Instance.transform.position - transform.position;
         

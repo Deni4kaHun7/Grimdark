@@ -29,6 +29,7 @@ public class Bandit : MonoBehaviour
         weaponCollider.gameObject.SetActive(false);
     }
 
+    
     public void FlipColliderDirection(){
         moveDir = enemyPathfinding.moveDir;
         if (moveDir.x > 0) {

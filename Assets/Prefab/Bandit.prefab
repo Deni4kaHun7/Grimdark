@@ -16,8 +16,8 @@ GameObject:
   - component: {fileID: 7420187744596378932}
   - component: {fileID: 7261593564283895676}
   - component: {fileID: 1415107443748856736}
-  - component: {fileID: 227913832976107655}
   - component: {fileID: 6009628580168348441}
+  - component: {fileID: 1061215702335007684}
   m_Layer: 0
   m_Name: Bandit
   m_TagString: Enemy
@@ -152,7 +152,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.0050992966, y: 0.0030192137}
+  m_Offset: {x: -0.012526512, y: -0.06841743}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -163,7 +163,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.7654171, y: 0.7842753}
+  m_Size: {x: 0.430521, y: 0.5217478}
   m_EdgeRadius: 0
 --- !u!114 &2661079764483632281
 MonoBehaviour:
@@ -226,19 +226,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc3cf7b4eb24e493eb34f4abe69695f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &227913832976107655
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2955607810801566273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cce47c797a60c451292726b2d89aead6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  weaponCollider: {fileID: 4055970138555591897}
 --- !u!114 &6009628580168348441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -254,7 +241,21 @@ MonoBehaviour:
   changeRoamingDirFloat: 2
   attackCoolDown: 2
   roamingCoolDown: 10
-  attackRange: 1
+  detectPlayerRange: 1.6
+  attackRange: 1.08
+--- !u!114 &1061215702335007684
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2955607810801566273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1c6507a0e36543c4bb04c077c421410, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weaponCollider: {fileID: 4055970138555591897}
 --- !u!1 &6025988365519733334
 GameObject:
   m_ObjectHideFlags: 0
@@ -265,7 +266,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4055970138555591897}
   - component: {fileID: 7883282057824791837}
-  - component: {fileID: 4358571399405346750}
+  - component: {fileID: 2057242284480836032}
   m_Layer: 0
   m_Name: Weapon Collider
   m_TagString: Untagged
@@ -281,13 +282,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6025988365519733334}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1950798541434213186}
-  m_LocalEulerAnglesHint: {x: 0, y: 180, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!60 &7883282057824791837
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -349,7 +350,7 @@ PolygonCollider2D:
       - {x: -0.35435867, y: -0.024985313}
       - {x: -0.35436153, y: -0.0039382577}
   m_UseDelaunayMesh: 0
---- !u!114 &4358571399405346750
+--- !u!114 &2057242284480836032
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
