@@ -91,7 +91,6 @@ public class EnemyAI : MonoBehaviour
             enemyPathfinding.ChangeSpriteDir();
             enemyPathfinding.StopMoving();
         }
-        Debug.Log(Vector2.Dot(roamPosition, transform.forward));
 
         if(Vector2.Distance(Player_Movement.Instance.transform.position, transform.position) > detectPlayerRange){
             state = State.Roaming;

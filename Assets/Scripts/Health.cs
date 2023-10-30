@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyHealth : MonoBehaviour
+public class Health : MonoBehaviour
 {
     [SerializeField] private int startHealth = 3;
     [SerializeField] private float knockBackThrust = 15f;
@@ -31,7 +31,6 @@ public class EnemyHealth : MonoBehaviour
     public void DetectDeath(){
         if(currentHealth <= 0){
             GetComponent<Animator>().SetTrigger(DEATH_HASH);
-            
             StartCoroutine(DeathRoutine());
         }
     }

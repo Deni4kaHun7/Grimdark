@@ -12,12 +12,12 @@ GameObject:
   - component: {fileID: 29967167640620092}
   - component: {fileID: 6935512814315153454}
   - component: {fileID: 8314427213507174403}
-  - component: {fileID: 2661079764483632281}
   - component: {fileID: 7420187744596378932}
   - component: {fileID: 7261593564283895676}
   - component: {fileID: 1415107443748856736}
   - component: {fileID: 6009628580168348441}
   - component: {fileID: 1061215702335007684}
+  - component: {fileID: 1116541146940967987}
   m_Layer: 0
   m_Name: Bandit
   m_TagString: Enemy
@@ -165,21 +165,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.430521, y: 0.5217478}
   m_EdgeRadius: 0
---- !u!114 &2661079764483632281
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2955607810801566273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b4cf99c2c5624e6785cfe0a76759795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startHealth: 3
-  knockBackThrust: 4
-  deathTime: 0.5
 --- !u!95 &7420187744596378932
 Animator:
   serializedVersion: 5
@@ -239,7 +224,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   changeRoamingDirFloat: 2
-  attackCoolDown: 2
+  attackCoolDown: 1.52
   roamingCoolDown: 10
   detectPlayerRange: 1.6
   attackRange: 1.08
@@ -256,6 +241,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponCollider: {fileID: 4055970138555591897}
+--- !u!114 &1116541146940967987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2955607810801566273}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1b4cf99c2c5624e6785cfe0a76759795, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startHealth: 3
+  knockBackThrust: 15
+  deathTime: 1
 --- !u!1 &6025988365519733334
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,6 +334,7 @@ PolygonCollider2D:
   m_Points:
     m_Paths:
     - - {x: -0.31272507, y: 0.028797865}
+      - {x: -0.31272507, y: 0.028797865}
       - {x: -1.3726053, y: -0.041308403}
       - {x: -1.5418911, y: -0.20651269}
       - {x: -1.4142895, y: -0.35870576}
