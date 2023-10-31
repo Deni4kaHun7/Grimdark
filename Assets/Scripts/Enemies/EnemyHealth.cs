@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Health : MonoBehaviour
+public class EnemyHealth : MonoBehaviour
 {
     [SerializeField] private int startHealth = 3;
     [SerializeField] private float knockBackThrust = 15f;
     [SerializeField] private float deathTime = 1f;
+    private Rigidbody2D rb;
     private int currentHealth;
     private Knockback knockback;
     readonly int FLASH_HASH = Animator.StringToHash("flash");
@@ -14,6 +15,7 @@ public class Health : MonoBehaviour
 
     private void Awake() {
         knockback = GetComponent<Knockback>();    
+        rb = GetComponent<Rigidbody2D>();
     }
 
     private void Start() {
@@ -22,7 +24,6 @@ public class Health : MonoBehaviour
 
     public void TakeDamage(int damage){
         currentHealth -= damage;
-        Debug.Log("plyaer" + currentHealth);
         GetComponent<Animator>().SetTrigger(FLASH_HASH); 
         knockback.GetKnockedBack(Player_Movement.Instance.transform , knockBackThrust);
         DetectDeath();
@@ -37,6 +38,7 @@ public class Health : MonoBehaviour
 
     private IEnumerator DeathRoutine(){
         yield return new WaitForSeconds(deathTime);
+        rb.velocity = Vector2.zero;
         Destroy(gameObject);
     }
 }

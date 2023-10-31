@@ -5,19 +5,16 @@ using UnityEngine.U2D;
 
 public class Player_Movement : MonoBehaviour
 {
+    [SerializeField] private LayerMask jumpableGround;
+    [SerializeField] private float jump_speed = 14f;
+    [SerializeField] private float movement_speed = 7f;
     private Rigidbody2D rb;
     private BoxCollider2D coll;
     private SpriteRenderer sprite;
     private Animator animator;
     public static Player_Movement Instance;
-
-    [SerializeField] private LayerMask jumpableGround;
-
     private float dirX;
-
-    [SerializeField] private float jump_speed = 14f;
-    [SerializeField] private float movement_speed = 7f;
-
+    private Knockback knockback;
     private enum MovementState { idle, running, jumping, falling }
 
     // Start is called before the first frame update
@@ -28,11 +25,14 @@ public class Player_Movement : MonoBehaviour
         coll = GetComponent<BoxCollider2D>();
         sprite = rb.GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
+        knockback = GetComponent<Knockback>();
     }
 
     // Update is called once per frame
     void Update()
     {
+        if(knockback.gettingKnockedBack){return;}
+
         dirX = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(dirX * movement_speed, rb.velocity.y);
 
