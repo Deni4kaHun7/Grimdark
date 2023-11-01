@@ -12,5 +12,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b7f59e54f2bfd184b9dd451a678d089b, type: 3}
   m_Name: NoiseSettings
   m_EditorClassIdentifier: 
-  PositionNoise: []
+  PositionNoise:
+  - X:
+      Frequency: 1.82
+      Amplitude: -0.94
+      Constant: 0
+    Y:
+      Frequency: 1.27
+      Amplitude: 1.61
+      Constant: 0
+    Z:
+      Frequency: 0
+      Amplitude: 0
+      Constant: 0
+  - X:
+      Frequency: 2.07
+      Amplitude: 2.6
+      Constant: 0
+    Y:
+      Frequency: 1.06
+      Amplitude: 0.13
+      Constant: 0
+    Z:
+      Frequency: 0
+      Amplitude: 0
+      Constant: 0
   OrientationNoise: []

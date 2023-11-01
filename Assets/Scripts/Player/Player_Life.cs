@@ -26,7 +26,8 @@ public class Player_Life : MonoBehaviour
 
     public void TakeDamage(int damage){
         currentHealth -= damage;
-        knockback.GetKnockedBack(EnemyAI.Enemy.transform , knockBackThrust);
+        ScreenShakeManager.Instance.ShakeScreen();
+        knockback.GetKnockedBack(EnemyAI.Instance.transform , knockBackThrust);
         GetComponent<Animator>().SetTrigger(KNOCKBACK_HASH);
         DetectDeath();
     }

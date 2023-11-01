@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.U2D;
 
-public class Player_Movement : MonoBehaviour
+public class Player_Movement : Singleton<Player_Movement>
 {
     [SerializeField] private LayerMask jumpableGround;
     [SerializeField] private float jump_speed = 14f;
@@ -12,15 +12,15 @@ public class Player_Movement : MonoBehaviour
     private BoxCollider2D coll;
     private SpriteRenderer sprite;
     private Animator animator;
-    public static Player_Movement Instance;
     private float dirX;
     private Knockback knockback;
     private enum MovementState { idle, running, jumping, falling }
 
     // Start is called before the first frame update
-    void Start()
+    protected override void Awake()
     {
-        Instance = this;
+        base.Awake();
+        
         rb = GetComponent<Rigidbody2D>();
         coll = GetComponent<BoxCollider2D>();
         sprite = rb.GetComponent<SpriteRenderer>();

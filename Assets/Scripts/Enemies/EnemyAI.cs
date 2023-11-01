@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyAI : MonoBehaviour
+public class EnemyAI : Singleton<EnemyAI>
 {   
     [SerializeField] private float attackCoolDown = 2f;
     [SerializeField] private float detectPlayerRange = 1.6f;
@@ -12,7 +12,6 @@ public class EnemyAI : MonoBehaviour
     private Bandit bandit;
     private bool canAttack = true;
     private bool canRoam = true;
-    public static EnemyAI Enemy;
     //enum is like a list of different states that enemy can have. Later I will use it to tell my enemy what to do if he has a specific type of State
     private enum State{
         Roaming,
@@ -24,11 +23,12 @@ public class EnemyAI : MonoBehaviour
     private State state;
     private EnemyPathfinding enemyPathfinding;
 
-    private void Awake() {
+    protected override void Awake() {
+        base.Awake();
+        
         enemyPathfinding = GetComponent<EnemyPathfinding>();
         bandit = GetComponent<Bandit>();
         state = State.Roaming;
-        Enemy = this;
     }
 
     private void Start() {
