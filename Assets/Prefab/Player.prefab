@@ -182,6 +182,9 @@ MonoBehaviour:
     m_Bits: 64
   jump_speed: 9
   movement_speed: 4
+  dashSpeed: 15
+  dashDuration: 0.1
+  dashCooldown: 1
 --- !u!95 &7436048567321894292
 Animator:
   serializedVersion: 5
