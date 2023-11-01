@@ -31,8 +31,10 @@ public class Player_Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(knockback.gettingKnockedBack){return;}
-
+        if(knockback.gettingKnockedBack){
+            rb.velocity = Vector2.zero;
+            return;}
+        Debug.Log("ghbdfsf");
         dirX = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(dirX * movement_speed, rb.velocity.y);
 

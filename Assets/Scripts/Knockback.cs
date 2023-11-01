@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Knockback : MonoBehaviour
 {
-    [SerializeField] private float knockbackTime = 1f;
+    [SerializeField] private float knockbackTime = 4f;
     private Rigidbody2D rb;
     public bool gettingKnockedBack {get ; private set;}
 

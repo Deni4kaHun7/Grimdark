@@ -9,6 +9,7 @@ public class Player_Life : MonoBehaviour
     [SerializeField] private float knockBackThrust = 15f;
     [SerializeField] private float deathTime = 1f;
     readonly int KNOCKBACK_HASH = Animator.StringToHash("knockback");
+    readonly int DEATH_HASH = Animator.StringToHash("death");
     private int currentHealth;
     private Knockback knockback;
     private Rigidbody2D rb;
@@ -27,12 +28,12 @@ public class Player_Life : MonoBehaviour
         currentHealth -= damage;
         knockback.GetKnockedBack(EnemyAI.Enemy.transform , knockBackThrust);
         GetComponent<Animator>().SetTrigger(KNOCKBACK_HASH);
-        Debug.Log(currentHealth);
         DetectDeath();
     }
 
     public void DetectDeath(){
         if(currentHealth <= 0){
+            GetComponent<Animator>().SetTrigger(DEATH_HASH);
             StartCoroutine(DeathRoutine());
         }
     }
@@ -40,7 +41,7 @@ public class Player_Life : MonoBehaviour
     private IEnumerator DeathRoutine(){
         yield return new WaitForSeconds(deathTime);
         rb.velocity = Vector2.zero;
-        Destroy(gameObject);
+        RestartLevel();
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -49,15 +50,6 @@ public class Player_Life : MonoBehaviour
             RestartLevel();
         } 
     }
-
-    /*
-    private void OnTriggerEnter(Collider other) {
-        Debug.Log("12312412");
-        if (other.gameObject.GetComponent<DamageSource>()){
-            Debug.Log("ssdf");
-            knockback.GetKnockedBack(other.transform, knockBackThrust);
-        }
-    }*/
 
     private void RestartLevel()
     {
