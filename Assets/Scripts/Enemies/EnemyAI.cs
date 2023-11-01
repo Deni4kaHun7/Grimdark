@@ -12,14 +12,11 @@ public class EnemyAI : Singleton<EnemyAI>
     private Bandit bandit;
     private bool canAttack = true;
     private bool canRoam = true;
-    //enum is like a list of different states that enemy can have. Later I will use it to tell my enemy what to do if he has a specific type of State
     private enum State{
         Roaming,
         Attacking
     }
-
     private Vector2 roamPosition;
-    private float timeRoaming = 0f;
     private State state;
     private EnemyPathfinding enemyPathfinding;
 
