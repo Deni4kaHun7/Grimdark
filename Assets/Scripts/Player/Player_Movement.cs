@@ -32,7 +32,7 @@ public class Player_Movement : MonoBehaviour
     void Update()
     {
         if(knockback.gettingKnockedBack){
-            rb.velocity = Vector2.zero;
+            //rb.velocity = Vector2.zero;
             return;}
         Debug.Log("ghbdfsf");
         dirX = Input.GetAxisRaw("Horizontal");

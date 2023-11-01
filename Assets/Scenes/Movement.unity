@@ -60881,26 +60881,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1247351695}
---- !u!1 &1130588173 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2955607810801566273, guid: 61d0c3b4f26a6498b9f9832e2a5b0b6b, type: 3}
-  m_PrefabInstance: {fileID: 5216615924019968570}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1130588184
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1130588173}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1b4cf99c2c5624e6785cfe0a76759795, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  startHealth: 100
-  knockBackThrust: 1.35
-  deathTime: 1
 --- !u!4 &1237369231 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 929991313452376126, guid: 93c4f600558cf9d438442981a9cadf19, type: 3}
@@ -63212,10 +63192,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8614074108805789124, guid: add4bd776aaa029478bff34b658fc0e0, type: 3}
-      propertyPath: knockBackThrust
-      value: 100
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -63229,10 +63205,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1415107443748856736, guid: 61d0c3b4f26a6498b9f9832e2a5b0b6b, type: 3}
-      propertyPath: knockbackTime
-      value: 0.3
-      objectReference: {fileID: 0}
     - target: {fileID: 1950798541434213186, guid: 61d0c3b4f26a6498b9f9832e2a5b0b6b, type: 3}
       propertyPath: m_LocalPosition.x
       value: 22.6
@@ -63277,30 +63249,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bandit
       objectReference: {fileID: 0}
-    - target: {fileID: 6009628580168348441, guid: 61d0c3b4f26a6498b9f9832e2a5b0b6b, type: 3}
-      propertyPath: attackCoolDown
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6009628580168348441, guid: 61d0c3b4f26a6498b9f9832e2a5b0b6b, type: 3}
-      propertyPath: detectPlayerRange
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6935512814315153454, guid: 61d0c3b4f26a6498b9f9832e2a5b0b6b, type: 3}
-      propertyPath: m_Constraints
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 6935512814315153454, guid: 61d0c3b4f26a6498b9f9832e2a5b0b6b, type: 3}
-      propertyPath: m_GravityScale
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1116541146940967987, guid: 61d0c3b4f26a6498b9f9832e2a5b0b6b, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 2955607810801566273, guid: 61d0c3b4f26a6498b9f9832e2a5b0b6b, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1130588184}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 61d0c3b4f26a6498b9f9832e2a5b0b6b, type: 3}
 --- !u!4 &6533966374443608435 stripped
 Transform:

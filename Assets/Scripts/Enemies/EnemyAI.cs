@@ -4,9 +4,7 @@ using UnityEngine;
 
 public class EnemyAI : MonoBehaviour
 {   
-    [SerializeField] private float changeRoamingDirFloat = 1f;
     [SerializeField] private float attackCoolDown = 2f;
-    [SerializeField] private float roamingCoolDown = 2f;
     [SerializeField] private float detectPlayerRange = 1.6f;
     [SerializeField] private float attackRange = 1.1f;
     private Vector2 leftDir = new Vector2(-1f, 0f);

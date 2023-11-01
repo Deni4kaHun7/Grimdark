@@ -17,7 +17,7 @@ GameObject:
   - component: {fileID: 1415107443748856736}
   - component: {fileID: 6009628580168348441}
   - component: {fileID: 1061215702335007684}
-  - component: {fileID: 1116541146940967987}
+  - component: {fileID: 3357383117743789322}
   m_Layer: 0
   m_Name: Bandit
   m_TagString: Enemy
@@ -108,7 +108,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 3
+  m_GravityScale: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -211,6 +211,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc3cf7b4eb24e493eb34f4abe69695f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  knockbackTime: 0.3
 --- !u!114 &6009628580168348441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -224,9 +225,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   changeRoamingDirFloat: 2
-  attackCoolDown: 1.52
+  attackCoolDown: 2
   roamingCoolDown: 10
-  detectPlayerRange: 1.6
+  detectPlayerRange: 2
   attackRange: 1.08
 --- !u!114 &1061215702335007684
 MonoBehaviour:
@@ -241,7 +242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   weaponCollider: {fileID: 4055970138555591897}
---- !u!114 &1116541146940967987
+--- !u!114 &3357383117743789322
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -253,8 +254,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b4cf99c2c5624e6785cfe0a76759795, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startHealth: 3
-  knockBackThrust: 15
+  startHealth: 100
+  knockBackThrust: 1.35
   deathTime: 1
 --- !u!1 &6025988365519733334
 GameObject:

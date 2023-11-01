@@ -214,7 +214,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startHealth: 100
-  knockBackThrust: 5
+  knockBackThrust: 100
   deathTime: 2
 --- !u!114 &3333448692278234464
 MonoBehaviour:
