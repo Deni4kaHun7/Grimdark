@@ -18,12 +18,18 @@ public class Player_Movement : MonoBehaviour
     [SerializeField] private float jump_speed = 14f;
     [SerializeField] private float movement_speed = 7f;
 
-    private enum MovementState { idle, running, jumping, falling }
+    [Header("Dash Settings")]
+    [SerializeField] float dashSpeed = 10f;
+    [SerializeField] float dashDuration = 0.1f;
+    [SerializeField] float dashCooldown = 1f;
+    private bool isDashing;
+    private bool canDash = true;
+
+    private enum MovementState { idle, running, jumping, falling, dashing }
 
     // Start is called before the first frame update
     void Start()
     {
-        Instance = this;
         rb = GetComponent<Rigidbody2D>();
         coll = GetComponent<BoxCollider2D>();
         sprite = rb.GetComponent<SpriteRenderer>();
@@ -33,6 +39,11 @@ public class Player_Movement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (isDashing)
+        {
+            return;
+        }
+
         dirX = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(dirX * movement_speed, rb.velocity.y);
 
@@ -41,7 +52,29 @@ public class Player_Movement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, jump_speed);
         }
 
+        if (Input.GetKeyDown(KeyCode.LeftControl) && canDash)
+        {
+            StartCoroutine(Dash());
+        }
+
         UpdateAnimationState();
+    }
+
+    private IEnumerator Dash()
+    {
+        canDash = false;
+        isDashing = true;
+
+        animator.SetTrigger("DashTrigger");
+
+        float dashDirection = sprite.flipX ? -1 : 1;
+
+        rb.velocity = new Vector2(dashSpeed * dashDirection, rb.velocity.y);
+        yield return new WaitForSeconds(dashDuration);
+        isDashing = false;
+
+        yield return new WaitForSeconds(dashCooldown);
+        canDash = true;
     }
 
     private void UpdateAnimationState()
