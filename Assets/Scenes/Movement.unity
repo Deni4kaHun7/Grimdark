@@ -63168,26 +63168,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2111069805176858466, guid: add4bd776aaa029478bff34b658fc0e0, type: 3}
-      propertyPath: m_Size.x
-      value: 0.3125
-      objectReference: {fileID: 0}
-    - target: {fileID: 2111069805176858466, guid: add4bd776aaa029478bff34b658fc0e0, type: 3}
-      propertyPath: m_Size.y
-      value: 0.65625
-      objectReference: {fileID: 0}
-    - target: {fileID: 2111069805176858466, guid: add4bd776aaa029478bff34b658fc0e0, type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -2416748699024534169, guid: c2512145df286fa479dab1a5d7e5f548, type: 3}
-    - target: {fileID: 2111069805176858466, guid: add4bd776aaa029478bff34b658fc0e0, type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3333448692278234464, guid: add4bd776aaa029478bff34b658fc0e0, type: 3}
-      propertyPath: knockbackTime
-      value: 100
-      objectReference: {fileID: 0}
     - target: {fileID: 4098329329138791650, guid: add4bd776aaa029478bff34b658fc0e0, type: 3}
       propertyPath: m_Name
       value: Player
@@ -63233,11 +63213,7 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8614074108805789124, guid: add4bd776aaa029478bff34b658fc0e0, type: 3}
-      propertyPath: deathTime
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 8614074108805789124, guid: add4bd776aaa029478bff34b658fc0e0, type: 3}
-      propertyPath: startHealth
+      propertyPath: knockBackThrust
       value: 100
       objectReference: {fileID: 0}
     m_RemovedComponents: []
