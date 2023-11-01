@@ -215,8 +215,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startHealth: 100
-  knockBackThrust: 100
-  deathTime: 2
+  knockBackThrust: 4.8
+  deathTime: 1
 --- !u!114 &3333448692278234464
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -229,7 +229,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fc3cf7b4eb24e493eb34f4abe69695f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  knockbackTime: 2
+  knockbackTime: 2.06
 --- !u!114 &8754641719399587574
 MonoBehaviour:
   m_ObjectHideFlags: 0

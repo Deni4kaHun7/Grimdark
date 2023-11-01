@@ -224,9 +224,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b2759eb112d4fe498562b65dbc47a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  changeRoamingDirFloat: 2
   attackCoolDown: 2
-  roamingCoolDown: 10
   detectPlayerRange: 2
   attackRange: 1.08
 --- !u!114 &1061215702335007684
@@ -336,9 +334,9 @@ PolygonCollider2D:
     m_Paths:
     - - {x: -0.31272507, y: 0.028797865}
       - {x: -0.31272507, y: 0.028797865}
-      - {x: -1.3726053, y: -0.041308403}
-      - {x: -1.5418911, y: -0.20651269}
-      - {x: -1.4142895, y: -0.35870576}
+      - {x: -1.0433578, y: -0.03101945}
+      - {x: -1.2126446, y: -0.17564583}
+      - {x: -1.1261988, y: -0.31754994}
       - {x: -0.7656956, y: -0.3787315}
       - {x: -0.26473427, y: -0.37533426}
       - {x: -0.26317406, y: -0.36683416}
