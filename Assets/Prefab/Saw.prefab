@@ -31,7 +31,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 5.2, y: -0.44000006, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.29913136, y: 0.29913136, z: 0.29913136}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -148,7 +148,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 076628fbc6c48fc409716dca3ec29f74, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  waypoints: []
+  waypoints:
+  - {fileID: 0}
+  - {fileID: 0}
   speed: 2
 --- !u!114 &5036550497060442328
 MonoBehaviour:
@@ -162,3 +164,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e5fbded06ca9a243a4847487924260a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  startHealth: 3
+  knockBackThrust: 15
+  deathTime: 1
