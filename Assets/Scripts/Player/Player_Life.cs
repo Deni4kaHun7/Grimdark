@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Player_Life : MonoBehaviour
 {
+    public bool isDead {get; private set; }
+
     [SerializeField] private int startHealth = 3;
     [SerializeField] private float knockBackThrust = 15f;
     [SerializeField] private float deathTime = 1f;
@@ -15,16 +17,20 @@ public class Player_Life : MonoBehaviour
     private Rigidbody2D rb;
 
 
-    private void Awake() {
+    public void Awake() {
+        //base.Awake();
+
         rb = GetComponent<Rigidbody2D>();
         knockback = GetComponent<Knockback>();
     }
-    void Start()
+    public void Start()
     {
+        isDead = false;
         currentHealth = startHealth;
     }
 
     public void TakeDamage(int damage){
+        Debug.Log("djdsf");
         currentHealth -= damage;
         ScreenShakeManager.Instance.ShakeScreen();
         knockback.GetKnockedBack(EnemyAI.Instance.transform , knockBackThrust);
@@ -33,15 +39,16 @@ public class Player_Life : MonoBehaviour
     }
 
     public void DetectDeath(){
-        if(currentHealth <= 0){
+        if(currentHealth <= 0 && !isDead){
+            isDead = true;
+            currentHealth = 0;
             GetComponent<Animator>().SetTrigger(DEATH_HASH);
-            StartCoroutine(DeathRoutine());
+            StartCoroutine(DeathLoadSceneRoutine());
         }
     }
 
-    private IEnumerator DeathRoutine(){
+    private IEnumerator DeathLoadSceneRoutine(){
         yield return new WaitForSeconds(deathTime);
-        rb.velocity = Vector2.zero;
         RestartLevel();
     }
 
@@ -55,6 +62,7 @@ public class Player_Life : MonoBehaviour
 
     private void RestartLevel()
     {
+        Destroy(gameObject);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
 }

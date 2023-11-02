@@ -21,6 +21,7 @@ public class Player_Movement : Singleton<Player_Movement>
     [SerializeField] float dashDuration = 0.1f;
     [SerializeField] float dashCooldown = 1f;
     private bool isDashing;
+    private Player_Life health;
     private bool canDash = true;
 
     // Start is called before the first frame update
@@ -33,15 +34,13 @@ public class Player_Movement : Singleton<Player_Movement>
         sprite = rb.GetComponent<SpriteRenderer>();
         animator = GetComponent<Animator>();
         knockback = GetComponent<Knockback>();
+        health = GetComponent<Player_Life>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(knockback.gettingKnockedBack){
-            //rb.velocity = Vector2.zero;
-            return;}
-        Debug.Log("ghbdfsf");
+        if(knockback.gettingKnockedBack || health.isDead){return;}
         if (isDashing)
         {
             return;

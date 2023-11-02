@@ -237,10 +237,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 119266410029837062, guid: aa09e0b3105f944eaa89976460bf3ee1, type: 3}
-      propertyPath: m_ChildCameras.Array.size
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6180155786642799695, guid: aa09e0b3105f944eaa89976460bf3ee1, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.438528
@@ -63264,6 +63260,63 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1001 &2041286439
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5347790702258447146, guid: 0e808d8d1f0464302a713dd1d206be00, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -11.857774
+      objectReference: {fileID: 0}
+    - target: {fileID: 5347790702258447146, guid: 0e808d8d1f0464302a713dd1d206be00, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.7098382
+      objectReference: {fileID: 0}
+    - target: {fileID: 5347790702258447146, guid: 0e808d8d1f0464302a713dd1d206be00, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.014648171
+      objectReference: {fileID: 0}
+    - target: {fileID: 5347790702258447146, guid: 0e808d8d1f0464302a713dd1d206be00, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5347790702258447146, guid: 0e808d8d1f0464302a713dd1d206be00, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5347790702258447146, guid: 0e808d8d1f0464302a713dd1d206be00, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5347790702258447146, guid: 0e808d8d1f0464302a713dd1d206be00, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5347790702258447146, guid: 0e808d8d1f0464302a713dd1d206be00, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5347790702258447146, guid: 0e808d8d1f0464302a713dd1d206be00, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5347790702258447146, guid: 0e808d8d1f0464302a713dd1d206be00, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6325986725849225074, guid: 0e808d8d1f0464302a713dd1d206be00, type: 3}
+      propertyPath: m_Name
+      value: Screen Shake Manager
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0e808d8d1f0464302a713dd1d206be00, type: 3}
 --- !u!1 &2087035421
 GameObject:
   m_ObjectHideFlags: 0
@@ -63426,3 +63479,4 @@ SceneRoots:
   - {fileID: 420452908}
   - {fileID: 829554436}
   - {fileID: 5216615924019968570}
+  - {fileID: 2041286439}
