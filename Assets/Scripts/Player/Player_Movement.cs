@@ -23,8 +23,6 @@ public class Player_Movement : Singleton<Player_Movement>
     private bool isDashing;
     private bool canDash = true;
 
-    private enum MovementState { idle, running, jumping, falling, dashing }
-
     // Start is called before the first frame update
     protected override void Awake()
     {
