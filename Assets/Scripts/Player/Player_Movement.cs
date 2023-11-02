@@ -8,6 +8,12 @@ public class Player_Movement : Singleton<Player_Movement>
     [SerializeField] private LayerMask jumpableGround;
     [SerializeField] private float jump_speed = 14f;
     [SerializeField] private float movement_speed = 7f;
+    [SerializeField] private TrailRenderer dashTrail;
+
+     [Header("Dash Settings")]
+    [SerializeField] float dashSpeed = 10f;
+    [SerializeField] float dashDuration = 0.1f;
+    [SerializeField] float dashCooldown = 1f;
     private Rigidbody2D rb;
     private BoxCollider2D coll;
     private SpriteRenderer sprite;
@@ -16,10 +22,7 @@ public class Player_Movement : Singleton<Player_Movement>
     private Knockback knockback;
     private enum MovementState { idle, running, jumping, falling }
 
-    [Header("Dash Settings")]
-    [SerializeField] float dashSpeed = 10f;
-    [SerializeField] float dashDuration = 0.1f;
-    [SerializeField] float dashCooldown = 1f;
+   
     private bool isDashing;
     private Player_Life health;
     private bool canDash = true;
@@ -56,6 +59,7 @@ public class Player_Movement : Singleton<Player_Movement>
 
         if (Input.GetKeyDown(KeyCode.LeftControl) && canDash)
         {
+            dashTrail.emitting = true;
             StartCoroutine(Dash());
         }
 
@@ -73,6 +77,7 @@ public class Player_Movement : Singleton<Player_Movement>
 
         rb.velocity = new Vector2(dashSpeed * dashDirection, rb.velocity.y);
         yield return new WaitForSeconds(dashDuration);
+        dashTrail.emitting = false;
         isDashing = false;
 
         yield return new WaitForSeconds(dashCooldown);
