@@ -68,7 +68,7 @@ public class Player_Movement : Singleton<Player_Movement>
         canDash = false;
         isDashing = true;
 
-        animator.SetTrigger("DashTrigger");
+        animator.SetTrigger("dashTrigger");
 
         float dashDirection = sprite.flipX ? -1 : 1;
 
