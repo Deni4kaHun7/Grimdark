@@ -43,11 +43,7 @@ public class Player_Movement : Singleton<Player_Movement>
     // Update is called once per frame
     void Update()
     {
-        if(knockback.gettingKnockedBack || health.isDead){return;}
-        if (isDashing)
-        {
-            return;
-        }
+        if(knockback.gettingKnockedBack || health.isDead || isDashing){return;}
 
         dirX = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(dirX * movement_speed, rb.velocity.y);
