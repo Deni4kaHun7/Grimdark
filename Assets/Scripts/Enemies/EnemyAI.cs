@@ -10,7 +10,7 @@ public class EnemyAI : Singleton<EnemyAI>
     private Vector2 leftDir = new Vector2(-1f, 0f);
     private Vector2 rightDir = new Vector2(1f, 0f);
     private Bandit bandit;
-    private bool canAttack = true;
+    public bool canAttack = true;
     private bool canRoam = true;
     private enum State{
         Roaming,
@@ -75,7 +75,8 @@ public class EnemyAI : Singleton<EnemyAI>
     }
 
     private void Attacking(){  
-        if(canAttack){
+        Debug.Log("Attack" + canAttack);
+        if(canAttack && EnemyHealth.Instance.currentHealth > 0){
             canAttack = false;
             enemyPathfinding.MoveTo(roamPosition);
             bandit.Attack();

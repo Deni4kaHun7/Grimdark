@@ -19,9 +19,7 @@ public class Knockback : MonoBehaviour
     }
 
     private IEnumerator KnockbackRoutine(){
-        Debug.Log("started");
         yield return new WaitForSeconds(knockbackTime);
-        Debug.Log("finished");
         gettingKnockedBack = false;
     }
 }
