@@ -75,7 +75,6 @@ public class EnemyAI : Singleton<EnemyAI>
     }
 
     private void Attacking(){  
-        Debug.Log("Attack" + canAttack);
         if(canAttack && EnemyHealth.Instance.currentHealth > 0){
             canAttack = false;
             enemyPathfinding.MoveTo(roamPosition);

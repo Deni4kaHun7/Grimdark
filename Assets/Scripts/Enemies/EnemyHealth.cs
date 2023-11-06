@@ -27,7 +27,7 @@ public class EnemyHealth : Singleton<EnemyHealth>
     public void TakeDamage(int damage){
         currentHealth -= damage;
         GetComponent<Animator>().SetTrigger(FLASH_HASH); 
-        knockback.GetKnockedBack(Player_Movement.Instance.transform , knockBackThrust);
+        //knockback.GetKnockedBack(Player_Movement.Instance.transform , knockBackThrust);
         DetectDeath();
     }
 
