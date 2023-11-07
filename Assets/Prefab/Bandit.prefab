@@ -17,7 +17,6 @@ GameObject:
   - component: {fileID: 6009628580168348441}
   - component: {fileID: 1061215702335007684}
   - component: {fileID: 3357383117743789322}
-  - component: {fileID: 6979165627074284547}
   m_Layer: 0
   m_Name: Bandit
   m_TagString: Enemy
@@ -212,7 +211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackCoolDown: 2
-  detectPlayerRange: 2
+  detectPlayerRange: 2.64
   attackRange: 1.08
   canAttack: 1
 --- !u!114 &1061215702335007684
@@ -240,23 +239,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b4cf99c2c5624e6785cfe0a76759795, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startHealth: 3
+  startHealth: 4
   knockBackThrust: 1.62
   deathTime: 1
   currentHealth: 0
---- !u!114 &6979165627074284547
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2955607810801566273}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc3cf7b4eb24e493eb34f4abe69695f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  knockbackTime: 0.3
 --- !u!1 &6025988365519733334
 GameObject:
   m_ObjectHideFlags: 0
