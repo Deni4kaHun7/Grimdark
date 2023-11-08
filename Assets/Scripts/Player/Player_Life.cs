@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class Player_Life : MonoBehaviour
 {
@@ -12,6 +13,7 @@ public class Player_Life : MonoBehaviour
     [SerializeField] private float deathTime = 1f;
     readonly int KNOCKBACK_HASH = Animator.StringToHash("knockback");
     readonly int DEATH_HASH = Animator.StringToHash("death");
+    private Animator healthUIAnimator;
     private int currentHealth;
     private Knockback knockback;
     private Rigidbody2D rb;
@@ -19,7 +21,7 @@ public class Player_Life : MonoBehaviour
 
     public void Awake() {
         //base.Awake();
-
+        healthUIAnimator = GameObject.Find("Image").GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         knockback = GetComponent<Knockback>();
     }
@@ -30,11 +32,11 @@ public class Player_Life : MonoBehaviour
     }
 
     public void TakeDamage(int damage){
-        Debug.Log("djdsf");
         currentHealth -= damage;
         ScreenShakeManager.Instance.ShakeScreen();
         knockback.GetKnockedBack(EnemyAI.Instance.transform , knockBackThrust);
         GetComponent<Animator>().SetTrigger(KNOCKBACK_HASH);
+        healthUIAnimator.SetTrigger("dmg");
         DetectDeath();
     }
 
