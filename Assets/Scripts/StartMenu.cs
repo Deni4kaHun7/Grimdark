@@ -12,7 +12,7 @@ public class StartMenu : MonoBehaviour
     }
     private void Update() {
         if (Input.anyKey){
-            SceneManager.LoadScene("Combat");
+            SceneManager.LoadScene("OpenCutscene");
             LoadSceneRoutine();
         }    
     }
