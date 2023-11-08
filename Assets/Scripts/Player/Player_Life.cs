@@ -66,5 +66,9 @@ public class Player_Life : MonoBehaviour
     {
         Destroy(gameObject);
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        
+        foreach (GameObject g in GameObject.FindGameObjectsWithTag("Enemy")){
+            Destroy(g);
+        }
     }
 }
