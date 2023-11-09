@@ -56,7 +56,7 @@ public class EnemyAI : Singleton<EnemyAI>
         }
 
         if(Vector2.Distance(Player_Movement.Instance.transform.position, transform.position) < detectPlayerRange){
-            roamPosition = Player_Movement.Instance.transform.position - transform.position;
+            //roamPosition = Player_Movement.Instance.transform.position - transform.position;
             state = State.Attacking;
             }
     }

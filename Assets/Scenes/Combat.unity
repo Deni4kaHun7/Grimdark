@@ -185,6 +185,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bandit
       objectReference: {fileID: 0}
+    - target: {fileID: 6009628580168348441, guid: 61d0c3b4f26a6498b9f9832e2a5b0b6b, type: 3}
+      propertyPath: attackCoolDown
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -335,6 +339,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2464222044056172153, guid: add4bd776aaa029478bff34b658fc0e0, type: 3}
+      propertyPath: movement_speed
+      value: 2.97
+      objectReference: {fileID: 0}
     - target: {fileID: 4098329329138791650, guid: add4bd776aaa029478bff34b658fc0e0, type: 3}
       propertyPath: m_Name
       value: Player
