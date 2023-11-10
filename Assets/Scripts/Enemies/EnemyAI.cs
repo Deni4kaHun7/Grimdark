@@ -25,7 +25,6 @@ public class EnemyAI : Singleton<EnemyAI>
         base.Awake();
         
         enemyPathfinding = GetComponent<EnemyPathfinding>();
-        bandit = GetComponent<Bandit>();
         state = State.Roaming;
     }
 
@@ -89,7 +88,7 @@ public class EnemyAI : Singleton<EnemyAI>
         }
         
         if(Vector2.Distance(Player_Movement.Instance.transform.position, transform.position) < attackRange){
-            bandit.FlipColliderDirection();
+            (enemyType as IEnemy).FlipColliderDirection();
             enemyPathfinding.ChangeSpriteDir();
             enemyPathfinding.StopMoving();
         }

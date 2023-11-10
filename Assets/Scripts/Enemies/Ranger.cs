@@ -2,17 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Ranger : MonoBehaviour
+public class Ranger : MonoBehaviour, IEnemy
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    [SerializeField] private GameObject bulletPrefab;
+
+    public void Attack(){
+        Vector2 tartgetDirection = Player_Movement.Instance.transform.position - transform.position;
+
+        GameObject newBullet = Instantiate(bulletPrefab, transform.position, Quaternion.identity);
+        newBullet.transform.right = tartgetDirection;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+    public void FlipColliderDirection(){
+        return;
     }
 }
