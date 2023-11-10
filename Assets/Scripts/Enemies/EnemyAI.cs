@@ -7,6 +7,7 @@ public class EnemyAI : Singleton<EnemyAI>
     [SerializeField] private float attackCoolDown = 2f;
     [SerializeField] private float detectPlayerRange = 1.6f;
     [SerializeField] private float attackRange = 1.1f;
+    [SerializeField] private MonoBehaviour enemyType;
     private Vector2 leftDir = new Vector2(-1f, 0f);
     private Vector2 rightDir = new Vector2(1f, 0f);
     private Bandit bandit;
@@ -34,6 +35,7 @@ public class EnemyAI : Singleton<EnemyAI>
 
     private void Update() {
         MovementStateControl();
+        Debug.Log(enemyType);
     }
 
     private void MovementStateControl(){
@@ -56,7 +58,6 @@ public class EnemyAI : Singleton<EnemyAI>
         }
 
         if(Vector2.Distance(Player_Movement.Instance.transform.position, transform.position) < detectPlayerRange){
-            //roamPosition = Player_Movement.Instance.transform.position - transform.position;
             state = State.Attacking;
             }
     }
@@ -76,9 +77,13 @@ public class EnemyAI : Singleton<EnemyAI>
 
     private void Attacking(){  
         if(canAttack && EnemyHealth.Instance.currentHealth > 0){
+
+            if(enemyType.GetComponent<Bandit>()){
+                roamPosition = Player_Movement.Instance.transform.position - transform.position;
+            }
+
             canAttack = false;
-            enemyPathfinding.MoveTo(roamPosition);
-            bandit.Attack();
+            (enemyType as IEnemy).Attack();
             
             StartCoroutine(AttackCoolDownRoutine());
         }
@@ -95,9 +100,7 @@ public class EnemyAI : Singleton<EnemyAI>
     }
 
     private IEnumerator AttackCoolDownRoutine(){
-        
         yield return new WaitForSeconds(attackCoolDown);
-        roamPosition = Player_Movement.Instance.transform.position - transform.position;
         
         canAttack = true;
     }

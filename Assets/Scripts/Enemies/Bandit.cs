@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bandit : MonoBehaviour
+public class Bandit : MonoBehaviour, IEnemy
 {
     [SerializeField] private Transform weaponCollider;
     private Animator animator;
