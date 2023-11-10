@@ -34,7 +34,6 @@ public class EnemyAI : Singleton<EnemyAI>
 
     private void Update() {
         MovementStateControl();
-        Debug.Log(enemyType);
     }
 
     private void MovementStateControl(){
