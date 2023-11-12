@@ -21,7 +21,9 @@ public class Bandit : MonoBehaviour, IEnemy
 
     public void Attack(){
         animator.SetTrigger("attack");
+    }
 
+    public void StartAttackingAnimEvent(){
         weaponCollider.gameObject.SetActive(true);
     }
 

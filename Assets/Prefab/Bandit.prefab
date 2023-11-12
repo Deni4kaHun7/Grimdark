@@ -210,7 +210,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b2759eb112d4fe498562b65dbc47a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCoolDown: 2
+  attackCoolDown: 4
   detectPlayerRange: 2.64
   attackRange: 1.08
   enemyType: {fileID: 1061215702335007684}
