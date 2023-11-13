@@ -13,37 +13,17 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
-                },
-                {
-                    "name": "Charge",
-                    "type": "Button",
-                    "id": "371fa34e-1ceb-4bf8-aa2d-a005259442ea",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": "",
-                    "initialStateCheck": false
                 }
             ],
             "bindings": [
                 {
                     "name": "",
-                    "id": "636fbff0-3eec-4005-930d-b3cdd17aa4d2",
+                    "id": "c9a1ed82-cf2b-4816-b01d-0d673a452a80",
                     "path": "<Mouse>/leftButton",
-                    "interactions": "",
+                    "interactions": "Tap,Hold(duration=1,pressPoint=0.55)",
                     "processors": "",
                     "groups": "",
                     "action": "Attack",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                },
-                {
-                    "name": "",
-                    "id": "608f7d17-98ad-4b0b-9632-433c0b55c42d",
-                    "path": "<Mouse>/leftButton",
-                    "interactions": "Hold",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Charge",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

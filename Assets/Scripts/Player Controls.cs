@@ -35,37 +35,17 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": false
-                },
-                {
-                    ""name"": ""Charge"",
-                    ""type"": ""Button"",
-                    ""id"": ""371fa34e-1ceb-4bf8-aa2d-a005259442ea"",
-                    ""expectedControlType"": ""Button"",
-                    ""processors"": """",
-                    ""interactions"": """",
-                    ""initialStateCheck"": false
                 }
             ],
             ""bindings"": [
                 {
                     ""name"": """",
-                    ""id"": ""636fbff0-3eec-4005-930d-b3cdd17aa4d2"",
+                    ""id"": ""c9a1ed82-cf2b-4816-b01d-0d673a452a80"",
                     ""path"": ""<Mouse>/leftButton"",
-                    ""interactions"": """",
+                    ""interactions"": ""Tap,Hold(duration=1,pressPoint=0.55)"",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Attack"",
-                    ""isComposite"": false,
-                    ""isPartOfComposite"": false
-                },
-                {
-                    ""name"": """",
-                    ""id"": ""608f7d17-98ad-4b0b-9632-433c0b55c42d"",
-                    ""path"": ""<Mouse>/leftButton"",
-                    ""interactions"": ""Hold"",
-                    ""processors"": """",
-                    ""groups"": """",
-                    ""action"": ""Charge"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
                 }
@@ -77,7 +57,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
         // Combat
         m_Combat = asset.FindActionMap("Combat", throwIfNotFound: true);
         m_Combat_Attack = m_Combat.FindAction("Attack", throwIfNotFound: true);
-        m_Combat_Charge = m_Combat.FindAction("Charge", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -140,13 +119,11 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     private readonly InputActionMap m_Combat;
     private List<ICombatActions> m_CombatActionsCallbackInterfaces = new List<ICombatActions>();
     private readonly InputAction m_Combat_Attack;
-    private readonly InputAction m_Combat_Charge;
     public struct CombatActions
     {
         private @PlayerControls m_Wrapper;
         public CombatActions(@PlayerControls wrapper) { m_Wrapper = wrapper; }
         public InputAction @Attack => m_Wrapper.m_Combat_Attack;
-        public InputAction @Charge => m_Wrapper.m_Combat_Charge;
         public InputActionMap Get() { return m_Wrapper.m_Combat; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -159,9 +136,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Attack.started += instance.OnAttack;
             @Attack.performed += instance.OnAttack;
             @Attack.canceled += instance.OnAttack;
-            @Charge.started += instance.OnCharge;
-            @Charge.performed += instance.OnCharge;
-            @Charge.canceled += instance.OnCharge;
         }
 
         private void UnregisterCallbacks(ICombatActions instance)
@@ -169,9 +143,6 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
             @Attack.started -= instance.OnAttack;
             @Attack.performed -= instance.OnAttack;
             @Attack.canceled -= instance.OnAttack;
-            @Charge.started -= instance.OnCharge;
-            @Charge.performed -= instance.OnCharge;
-            @Charge.canceled -= instance.OnCharge;
         }
 
         public void RemoveCallbacks(ICombatActions instance)
@@ -192,6 +163,5 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
     public interface ICombatActions
     {
         void OnAttack(InputAction.CallbackContext context);
-        void OnCharge(InputAction.CallbackContext context);
     }
 }

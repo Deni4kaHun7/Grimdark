@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem.Interactions;
 
 public class Combat : MonoBehaviour
 {
@@ -20,21 +21,34 @@ public class Combat : MonoBehaviour
     }
 
     private void Start() {
-        playerControls.Combat.Attack.started += _ => Attack();
-
+        playerControls.Combat.Attack.started += context => {
+            if (context.interaction is HoldInteraction){
+                animator.SetTrigger("startChargeAnim");
+            }
+            else if (context.interaction is TapInteraction){
+                animator.SetTrigger("attack");
+            } 
+        };
+        
+        playerControls.Combat.Attack.performed += context => {
+            if (context.interaction is HoldInteraction){
+                animator.SetTrigger("finishChargeAnim");
+            }
+            else if (context.interaction is TapInteraction){
+                return;
+            } 
+        };
     }
 
     private void Update() {
         FlipColliderDirectionPlayer();
     }
 
-    public void Attack(){
-        animator.SetTrigger("attack");
-
+    public void ActivateWeaponCollider(){
         weaponCollider.gameObject.SetActive(true);
     }
 
-    public void DoneAttackingAnimEvent(){
+    public void DeactivateWeaponCollider(){
         weaponCollider.gameObject.SetActive(false);
     }
 
