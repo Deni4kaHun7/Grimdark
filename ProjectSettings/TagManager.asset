@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Trap
+  - SawLoad
   layers:
   - Default
   - TransparentFX

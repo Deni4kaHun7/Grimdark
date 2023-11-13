@@ -53,7 +53,7 @@ public class Player_Movement : Singleton<Player_Movement>
             rb.velocity = new Vector2(rb.velocity.x, jump_speed);
         }
 
-        if (Input.GetKeyDown(KeyCode.LeftControl) && canDash)
+        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
         {
             dashTrail.emitting = true;
             StartCoroutine(Dash());

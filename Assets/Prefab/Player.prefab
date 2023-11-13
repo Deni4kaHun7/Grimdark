@@ -367,7 +367,7 @@ MonoBehaviour:
   jump_speed: 9
   movement_speed: 4
   dashTrail: {fileID: 7643955595700953693}
-  dashSpeed: 15.37
+  dashSpeed: 35
   dashDuration: 0.1
   dashCooldown: 1
 --- !u!114 &8614074108805789124
