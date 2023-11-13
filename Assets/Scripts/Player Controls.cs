@@ -42,7 +42,7 @@ public partial class @PlayerControls: IInputActionCollection2, IDisposable
                     ""name"": """",
                     ""id"": ""c9a1ed82-cf2b-4816-b01d-0d673a452a80"",
                     ""path"": ""<Mouse>/leftButton"",
-                    ""interactions"": ""Tap,Hold(duration=1,pressPoint=0.55)"",
+                    ""interactions"": ""MultiTap(tapCount=3),Hold(duration=1.46,pressPoint=1)"",
                     ""processors"": """",
                     ""groups"": """",
                     ""action"": ""Attack"",

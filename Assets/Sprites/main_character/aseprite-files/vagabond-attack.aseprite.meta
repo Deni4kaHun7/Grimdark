@@ -141,7 +141,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 125}
   - name: vagabond-attack_Frame_6
     originalName: 
-    pivot: {x: 0.5046228, y: 0.48845953}
+    pivot: {x: 0.16, y: 0.58}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -161,7 +161,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 73}
   - name: vagabond-attack_Frame_7
     originalName: 
-    pivot: {x: 0.5054976, y: 0.4962957}
+    pivot: {x: 0.17, y: 0.62}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -181,7 +181,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 100}
   - name: vagabond-attack_Frame_8
     originalName: 
-    pivot: {x: 0.5809526, y: 0.5228765}
+    pivot: {x: 0.4, y: 0.62}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -201,7 +201,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 179}
   - name: vagabond-attack_Frame_9
     originalName: 
-    pivot: {x: 0.5818402, y: 0.53094304}
+    pivot: {x: 0.5818402, y: 0.62}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -221,7 +221,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 230}
   - name: vagabond-attack_Frame_10
     originalName: 
-    pivot: {x: 0.4973545, y: 0.43442014}
+    pivot: {x: 0.4973545, y: 0.55}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -341,7 +341,7 @@ ScriptedImporter:
     uvTransform: {x: 107, y: 4}
   - name: vagabond-attack_Frame_11
     originalName: 
-    pivot: {x: 0.48636687, y: 0.485803}
+    pivot: {x: 0.19, y: 0.29}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -361,7 +361,7 @@ ScriptedImporter:
     uvTransform: {x: 4, y: 4}
   - name: vagabond-attack_Frame_12
     originalName: 
-    pivot: {x: 0.49441093, y: 0.48666644}
+    pivot: {x: 0.06, y: 0.64}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -381,7 +381,7 @@ ScriptedImporter:
     uvTransform: {x: 81, y: 47}
   - name: vagabond-attack_Frame_13
     originalName: 
-    pivot: {x: 0.50331455, y: 0.49756858}
+    pivot: {x: 0.04, y: 0.8}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:
@@ -401,7 +401,7 @@ ScriptedImporter:
     uvTransform: {x: 69, y: 100}
   - name: vagabond-attack_Frame_14
     originalName: 
-    pivot: {x: 0.47044638, y: 0.54631275}
+    pivot: {x: -0.01, y: 0.8}
     alignment: 9
     border: {x: 0, y: 0, z: 0, w: 0}
     rect:

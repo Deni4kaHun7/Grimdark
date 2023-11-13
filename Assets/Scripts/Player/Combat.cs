@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Interactions;
 
 public class Combat : MonoBehaviour
@@ -23,23 +24,24 @@ public class Combat : MonoBehaviour
 
     private void Start() {
         playerControls.Combat.Attack.started += context => {
-            if (context.interaction is HoldInteraction){
-                animator.SetTrigger("startChargeAnim");
-                damage = 2;
-            }
-            else if (context.interaction is TapInteraction){
+            if (context.interaction is MultiTapInteraction ){
                 animator.SetTrigger("attack");
                 damage = 1;
             } 
+            else if (context.interaction is HoldInteraction){
+                animator.SetTrigger("startChargeAnim");
+                damage = 3;
+            }
         };
         
         playerControls.Combat.Attack.performed += context => {
-            if (context.interaction is HoldInteraction){
+            if (context.interaction is MultiTapInteraction){
+                animator.SetTrigger("3hitCombo");
+                damage = 2;
+            }  
+             else if (context.interaction is HoldInteraction){
                 animator.SetTrigger("finishChargeAnim");
             }
-            else if (context.interaction is TapInteraction){
-                return;
-            } 
         };
     }
 
