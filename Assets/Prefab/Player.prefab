@@ -365,7 +365,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   jump_speed: 9
-  movement_speed: 4
+  movement_speed: 2.97
   dashTrail: {fileID: 7643955595700953693}
   dashSpeed: 15.37
   dashDuration: 0.1
