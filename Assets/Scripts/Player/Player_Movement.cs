@@ -47,6 +47,7 @@ public class Player_Movement : Singleton<Player_Movement>
 
         dirX = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(dirX * movement_speed, rb.velocity.y);
+        
 
         if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())
         {

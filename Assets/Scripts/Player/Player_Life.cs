@@ -6,11 +6,13 @@ using UnityEngine.UI;
 
 public class Player_Life : MonoBehaviour
 {
-    public bool isDead {get; private set; }
+    
 
     [SerializeField] private int startHealth = 3;
     [SerializeField] private float knockBackThrust = 15f;
     [SerializeField] private float deathTime = 1f;
+    public bool canTakeDamage;
+    public bool isDead {get; private set; }
     readonly int KNOCKBACK_HASH = Animator.StringToHash("knockback");
     readonly int DEATH_HASH = Animator.StringToHash("death");
     private Animator healthUIAnimator;
@@ -20,24 +22,31 @@ public class Player_Life : MonoBehaviour
 
 
     public void Awake() {
-        //base.Awake();
         healthUIAnimator = GameObject.Find("Image").GetComponent<Animator>();
         rb = GetComponent<Rigidbody2D>();
         knockback = GetComponent<Knockback>();
     }
+
+    private void Update() {
+        Debug.Log(canTakeDamage);
+    }
     public void Start()
     {
         isDead = false;
+        canTakeDamage = true;
         currentHealth = startHealth;
     }
 
     public void TakeDamage(int damage){
-        currentHealth -= damage;
-        ScreenShakeManager.Instance.ShakeScreen();
-        knockback.GetKnockedBack(EnemyAI.Instance.transform , knockBackThrust);
-        GetComponent<Animator>().SetTrigger(KNOCKBACK_HASH);
-        healthUIAnimator.SetTrigger("dmg");
-        DetectDeath();
+        if (canTakeDamage){
+            currentHealth -= damage;
+            ScreenShakeManager.Instance.ShakeScreen();
+            knockback.GetKnockedBack(EnemyAI.Instance.transform , knockBackThrust);
+            GetComponent<Animator>().SetTrigger(KNOCKBACK_HASH);
+            healthUIAnimator.SetTrigger("dmg");
+            DetectDeath();
+        }
+
     }
 
     public void DetectDeath(){

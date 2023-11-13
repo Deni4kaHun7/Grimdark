@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq.Expressions;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.InputSystem.Interactions;
@@ -12,10 +13,12 @@ public class Combat : MonoBehaviour
     private Animator animator;
     private float dirX;
     private Vector2 moveDir;
+    private Player_Life health;
 
     private void Awake() {
         playerControls = new PlayerControls();
         animator = GetComponent<Animator>();
+        health = GetComponent<Player_Life>();
     }
 
     private void OnEnable() {
@@ -43,6 +46,17 @@ public class Combat : MonoBehaviour
                 animator.SetTrigger("finishChargeAnim");
             }
         };
+
+        playerControls.Combat.Defense.started += _ => {
+            animator.SetBool("block", true);
+            health.canTakeDamage = false;
+            };
+
+        playerControls.Combat.Defense.performed += _ => {
+            Debug.Log("fsf");
+            animator.SetBool("block", false);
+            health.canTakeDamage = true;
+            };
     }
 
     private void Update() {
