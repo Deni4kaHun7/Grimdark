@@ -53,7 +53,11 @@ public class Combat : MonoBehaviour
             };
 
         playerControls.Combat.Defense.performed += _ => {
-            Debug.Log("fsf");
+            animator.SetBool("block", false);
+            health.canTakeDamage = true;
+            };
+
+        playerControls.Combat.Defense.canceled += _ => {
             animator.SetBool("block", false);
             health.canTakeDamage = true;
             };
