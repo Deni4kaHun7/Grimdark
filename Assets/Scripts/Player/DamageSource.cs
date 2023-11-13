@@ -5,10 +5,13 @@ using UnityEngine;
 public class DamageSource : MonoBehaviour
 {   
     [SerializeField] private int damageAmount = 1;
+    private int damagePlayer;
     private void OnTriggerEnter2D(Collider2D other) {
         if(other.gameObject.GetComponent<EnemyHealth>()){
             EnemyHealth enemyHealth = other.gameObject.GetComponent<EnemyHealth>();
-            enemyHealth.TakeDamage(damageAmount);
+            damagePlayer = GetComponentInParent<Combat>().damage;
+            Debug.Log(damagePlayer);
+            enemyHealth.TakeDamage(damagePlayer);
         }else if(other.gameObject.GetComponent<Player_Life>()){
             Player_Life playerHealth = other.gameObject.GetComponent<Player_Life>();
             playerHealth.TakeDamage(damageAmount);

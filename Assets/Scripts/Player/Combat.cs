@@ -6,6 +6,7 @@ using UnityEngine.InputSystem.Interactions;
 public class Combat : MonoBehaviour
 {
     [SerializeField] private Transform weaponCollider;
+    public int damage{get; private set;}
     private PlayerControls playerControls;
     private Animator animator;
     private float dirX;
@@ -24,9 +25,11 @@ public class Combat : MonoBehaviour
         playerControls.Combat.Attack.started += context => {
             if (context.interaction is HoldInteraction){
                 animator.SetTrigger("startChargeAnim");
+                damage = 2;
             }
             else if (context.interaction is TapInteraction){
                 animator.SetTrigger("attack");
+                damage = 1;
             } 
         };
         
