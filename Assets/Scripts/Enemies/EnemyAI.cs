@@ -74,11 +74,8 @@ public class EnemyAI : Singleton<EnemyAI>
 
     private void Attacking(){  
         if(canAttack && EnemyHealth.Instance.currentHealth > 0){
-            Debug.Log(gameObject.tag);
-
             if(enemyType.GetComponent<Bandit>()){
-                Debug.Log("fsdf");
-                roamPosition = Player_Movement.Instance.transform.position - transform.position;
+                enemyPathfinding.MoveTo(roamPosition);
             }
 
             canAttack = false;
@@ -100,7 +97,9 @@ public class EnemyAI : Singleton<EnemyAI>
 
     private IEnumerator AttackCoolDownRoutine(){
         yield return new WaitForSeconds(attackCoolDown);
-        
+        if(enemyType.GetComponent<Bandit>()){
+                roamPosition = Player_Movement.Instance.transform.position - transform.position;
+            }
         canAttack = true;
     }
 }
