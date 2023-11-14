@@ -81,7 +81,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 257658456, guid: a08cf808882ec472e95b67bf64e6901d, type: 3}
+  m_Sprite: {fileID: -1427993543, guid: b96f9899ee708429892df49aeee20b4c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 1
   m_FlipY: 0
@@ -155,7 +155,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.375, y: 1.21875}
+    oldSize: {x: 1.34375, y: 0.71875}
     newSize: {x: 1.375, y: 1.21875}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -174,7 +174,7 @@ Animator:
   m_GameObject: {fileID: 2955607810801566273}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7005407a7a94441e9b03e9ed989c6c58, type: 2}
+  m_Controller: {fileID: 9100000, guid: f117d1c0e4a4b4b1eb30913f4cdfe7e2, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -210,9 +210,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 08b2759eb112d4fe498562b65dbc47a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackCoolDown: 3
-  detectPlayerRange: 2.64
-  attackRange: 0.09
+  attackCoolDown: 2.07
+  detectPlayerRange: 3.1
+  attackRange: 0.62
   enemyType: {fileID: 1061215702335007684}
   canAttack: 1
 --- !u!114 &1061215702335007684
