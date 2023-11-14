@@ -10,7 +10,6 @@ public class EnemyAI : Singleton<EnemyAI>
     [SerializeField] private MonoBehaviour enemyType;
     private Vector2 leftDir = new Vector2(-1f, 0f);
     private Vector2 rightDir = new Vector2(1f, 0f);
-    private Bandit bandit;
     public bool canAttack = true;
     private bool canRoam = true;
     private enum State{
@@ -75,8 +74,10 @@ public class EnemyAI : Singleton<EnemyAI>
 
     private void Attacking(){  
         if(canAttack && EnemyHealth.Instance.currentHealth > 0){
+            Debug.Log(gameObject.tag);
 
             if(enemyType.GetComponent<Bandit>()){
+                Debug.Log("fsdf");
                 roamPosition = Player_Movement.Instance.transform.position - transform.position;
             }
 
