@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Bandit : MonoBehaviour
+public class Bandit : MonoBehaviour, IEnemy
 {
     [SerializeField] private Transform weaponCollider;
     private Animator animator;
@@ -21,7 +21,9 @@ public class Bandit : MonoBehaviour
 
     public void Attack(){
         animator.SetTrigger("attack");
+    }
 
+    public void StartAttackingAnimEvent(){
         weaponCollider.gameObject.SetActive(true);
     }
 

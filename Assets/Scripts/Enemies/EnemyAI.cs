@@ -7,9 +7,9 @@ public class EnemyAI : Singleton<EnemyAI>
     [SerializeField] private float attackCoolDown = 2f;
     [SerializeField] private float detectPlayerRange = 1.6f;
     [SerializeField] private float attackRange = 1.1f;
+    [SerializeField] private MonoBehaviour enemyType;
     private Vector2 leftDir = new Vector2(-1f, 0f);
     private Vector2 rightDir = new Vector2(1f, 0f);
-    private Bandit bandit;
     public bool canAttack = true;
     private bool canRoam = true;
     private enum State{
@@ -24,7 +24,6 @@ public class EnemyAI : Singleton<EnemyAI>
         base.Awake();
         
         enemyPathfinding = GetComponent<EnemyPathfinding>();
-        bandit = GetComponent<Bandit>();
         state = State.Roaming;
     }
 
@@ -56,7 +55,6 @@ public class EnemyAI : Singleton<EnemyAI>
         }
 
         if(Vector2.Distance(Player_Movement.Instance.transform.position, transform.position) < detectPlayerRange){
-            //roamPosition = Player_Movement.Instance.transform.position - transform.position;
             state = State.Attacking;
             }
     }
@@ -76,15 +74,18 @@ public class EnemyAI : Singleton<EnemyAI>
 
     private void Attacking(){  
         if(canAttack && EnemyHealth.Instance.currentHealth > 0){
+            if(enemyType.GetComponent<Bandit>()){
+                enemyPathfinding.MoveTo(roamPosition);
+            }
+
             canAttack = false;
-            enemyPathfinding.MoveTo(roamPosition);
-            bandit.Attack();
+            (enemyType as IEnemy).Attack();
             
             StartCoroutine(AttackCoolDownRoutine());
         }
         
         if(Vector2.Distance(Player_Movement.Instance.transform.position, transform.position) < attackRange){
-            bandit.FlipColliderDirection();
+            (enemyType as IEnemy).FlipColliderDirection();
             enemyPathfinding.ChangeSpriteDir();
             enemyPathfinding.StopMoving();
         }
@@ -95,10 +96,10 @@ public class EnemyAI : Singleton<EnemyAI>
     }
 
     private IEnumerator AttackCoolDownRoutine(){
-        
         yield return new WaitForSeconds(attackCoolDown);
-        roamPosition = Player_Movement.Instance.transform.position - transform.position;
-        
+        if(enemyType.GetComponent<Bandit>()){
+                roamPosition = Player_Movement.Instance.transform.position - transform.position;
+            }
         canAttack = true;
     }
 }
