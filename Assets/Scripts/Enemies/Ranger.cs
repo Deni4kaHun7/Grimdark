@@ -30,9 +30,11 @@ public class Ranger : MonoBehaviour, IEnemy
     public void FlipColliderDirection(){
         moveDir = enemyPathfinding.moveDir;
         if (moveDir.x > 0) {
-            bulletPosition.transform.position = new Vector3(0.5f, 0, 0) * Time.deltaTime;
+            //bulletPosition.transform.rotation = Quaternion.Euler(0, -180, 0);
+            bulletPosition.transform.position = new Vector3(1, 0, 0);
         } else if (moveDir.x < 0) {
-            bulletPosition.transform.position = new Vector3(-0.5f, 0f, 0f) * Time.deltaTime;
+            bulletPosition.transform.position = new Vector3(-0.5f, 0f, 0f);
+            //bulletPosition.transform.rotation = Quaternion.Euler(0, 0, 0);
         }
     }
 }
