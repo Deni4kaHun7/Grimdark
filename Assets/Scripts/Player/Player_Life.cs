@@ -27,9 +27,6 @@ public class Player_Life : MonoBehaviour
         knockback = GetComponent<Knockback>();
     }
 
-    private void Update() {
-        Debug.Log(canTakeDamage);
-    }
     public void Start()
     {
         isDead = false;

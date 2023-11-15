@@ -2,12 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyAI : Singleton<EnemyAI>
+public class EnemyAI : MonoBehaviour
 {   
     [SerializeField] private float attackCoolDown = 2f;
     [SerializeField] private float detectPlayerRange = 1.6f;
     [SerializeField] private float attackRange = 1.1f;
     [SerializeField] private MonoBehaviour enemyType;
+    public static EnemyAI Instance;
     private Vector2 leftDir = new Vector2(-1f, 0f);
     private Vector2 rightDir = new Vector2(1f, 0f);
     public bool canAttack = true;
@@ -20,14 +21,13 @@ public class EnemyAI : Singleton<EnemyAI>
     private State state;
     private EnemyPathfinding enemyPathfinding;
 
-    protected override void Awake() {
-        base.Awake();
-        
+    private void Awake() {
         enemyPathfinding = GetComponent<EnemyPathfinding>();
         state = State.Roaming;
     }
 
     private void Start() {
+        Instance = this;
         roamPosition = leftDir;
     }
 

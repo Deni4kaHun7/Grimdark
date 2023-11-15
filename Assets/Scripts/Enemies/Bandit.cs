@@ -6,7 +6,6 @@ public class Bandit : MonoBehaviour, IEnemy
 {
     [SerializeField] private Transform weaponCollider;
     private Animator animator;
-    private float dirX;
     private EnemyPathfinding enemyPathfinding;
     private Vector2 moveDir;
 
