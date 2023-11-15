@@ -5,21 +5,24 @@ using UnityEngine.SceneManagement;
 
 public class StartMenu : MonoBehaviour
 {
+    [SerializeField] private AudioSource swordSound;
+    [SerializeField] private GameObject blackScreen;
     private Canvas canvas;
 
     private void Awake() {
         canvas = GetComponent<Canvas>();
     }
-    private void Update() {
+    private void FixedUpdate() {
         if (Input.anyKey){
-            SceneManager.LoadScene("OpenCutscene");
-            LoadSceneRoutine();
+            
+            StartCoroutine(LoadSceneRoutine());
         }    
     }
     private IEnumerator LoadSceneRoutine(){
-        //canvas.enabled = false;
-        yield return new WaitForSeconds(2f);
-        
+        swordSound.Play();
+        blackScreen.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        SceneManager.LoadScene("OpenCutscene");
     }
     
 }
