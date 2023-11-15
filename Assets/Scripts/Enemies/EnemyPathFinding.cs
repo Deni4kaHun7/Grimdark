@@ -19,8 +19,6 @@ public class EnemyPathfinding : MonoBehaviour
     }
 
     private void FixedUpdate() {
-        //if(knockback.gettingKnockedBack){ return ;}
-
         rb.MovePosition(rb.position + moveDir * (Time.deltaTime * movementSpeed));
         animator.SetFloat("moveX", moveDir.x);
         ChangeSpriteDir();
