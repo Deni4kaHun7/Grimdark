@@ -31,7 +31,7 @@ public class Ranger : MonoBehaviour, IEnemy
         moveDir = enemyPathfinding.moveDir;
         if (moveDir.x > 0) {
             //bulletPosition.transform.rotation = Quaternion.Euler(0, -180, 0);
-            //bulletPosition.transform.position = new Vector3(1, 0, 0);
+            bulletPosition.transform.position = new Vector3(0.5f, 0, 0);
         } else if (moveDir.x < 0) {
             //bulletPosition.transform.position = new Vector3(-0.5f, 0f, 0f);
             //bulletPosition.transform.rotation = Quaternion.Euler(0, 0, 0);
