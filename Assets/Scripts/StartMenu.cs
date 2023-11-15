@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class StartMenu : MonoBehaviour
 {
     [SerializeField] private AudioSource swordSound;
+    [SerializeField] private GameObject blackScreen;
     private Canvas canvas;
 
     private void Awake() {
@@ -13,16 +14,15 @@ public class StartMenu : MonoBehaviour
     }
     private void FixedUpdate() {
         if (Input.anyKey){
-            swordSound.Play();
             
-            LoadSceneRoutine();
+            StartCoroutine(LoadSceneRoutine());
         }    
     }
     private IEnumerator LoadSceneRoutine(){
-        //canvas.enabled = false;
-        yield return new WaitForSeconds(2f);
-        Debug.Log("sdfds");
-        //SceneManager.LoadScene("OpenCutscene");
+        swordSound.Play();
+        blackScreen.SetActive(true);
+        yield return new WaitForSeconds(3f);
+        SceneManager.LoadScene("OpenCutscene");
     }
     
 }
