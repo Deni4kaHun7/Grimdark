@@ -7,9 +7,9 @@ public class LoadNextScene : MonoBehaviour
 {
     void OnEnable()
     {
-        Destroy(GameObject.FindGameObjectWithTag("Enemy"));
+        Destroy(GameObject.FindGameObjectWithTag("Trap"));
 
         Destroy(GameObject.FindGameObjectWithTag("Player"));
-        SceneManager.LoadScene("Combat");
+        SceneManager.LoadScene("L1S1");
     }
 }
