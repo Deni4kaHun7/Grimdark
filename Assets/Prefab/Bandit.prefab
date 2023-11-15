@@ -211,7 +211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackCoolDown: 3
-  detectPlayerRange: 3.1
+  detectPlayerRange: 2.58
   attackRange: 1.41
   enemyType: {fileID: 1061215702335007684}
   canAttack: 1

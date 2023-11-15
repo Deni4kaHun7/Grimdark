@@ -55,6 +55,7 @@ public class EnemyAI : Singleton<EnemyAI>
         }
 
         if(Vector2.Distance(Player_Movement.Instance.transform.position, transform.position) < detectPlayerRange){
+            roamPosition = Player_Movement.Instance.transform.position - transform.position;
             state = State.Attacking;
             }
     }
@@ -74,10 +75,7 @@ public class EnemyAI : Singleton<EnemyAI>
 
     private void Attacking(){  
         if(canAttack && EnemyHealth.Instance.currentHealth > 0){
-            if(enemyType.GetComponent<Bandit>()){
-                enemyPathfinding.MoveTo(roamPosition);
-            }
-
+            enemyPathfinding.MoveTo(roamPosition);
             canAttack = false;
             (enemyType as IEnemy).Attack();
             
@@ -85,6 +83,7 @@ public class EnemyAI : Singleton<EnemyAI>
         }
         
         if(Vector2.Distance(Player_Movement.Instance.transform.position, transform.position) < attackRange){
+            Debug.Log("fsdf");
             (enemyType as IEnemy).FlipColliderDirection();
             enemyPathfinding.ChangeSpriteDir();
             enemyPathfinding.StopMoving();
@@ -97,9 +96,7 @@ public class EnemyAI : Singleton<EnemyAI>
 
     private IEnumerator AttackCoolDownRoutine(){
         yield return new WaitForSeconds(attackCoolDown);
-        if(enemyType.GetComponent<Bandit>()){
-                roamPosition = Player_Movement.Instance.transform.position - transform.position;
-            }
+        roamPosition = Player_Movement.Instance.transform.position - transform.position;
         canAttack = true;
     }
 }

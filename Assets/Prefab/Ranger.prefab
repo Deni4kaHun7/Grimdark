@@ -274,7 +274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackCoolDown: 3
-  detectPlayerRange: 4.5
+  detectPlayerRange: 4.55
   attackRange: 4.55
   enemyType: {fileID: 935465216455593252}
   canAttack: 1
@@ -290,7 +290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1b4cf99c2c5624e6785cfe0a76759795, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startHealth: 4
+  startHealth: 2
   deathTime: 1
   currentHealth: 0
 --- !u!114 &935465216455593252
