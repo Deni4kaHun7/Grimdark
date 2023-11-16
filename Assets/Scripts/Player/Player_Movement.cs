@@ -16,9 +16,7 @@ public class Player_Movement : Singleton<Player_Movement>
     [SerializeField] float dashCooldown = 1f;
 
     [Header("Sounds")]
-    [SerializeField] private AudioSource stepSounds;
-
-    [SerializeField] private AudioSource dashSounds;
+    //[SerializeField] private AudioSource stepSounds;
     private Rigidbody2D rb;
     private BoxCollider2D coll;
     private SpriteRenderer sprite;
@@ -54,7 +52,7 @@ public class Player_Movement : Singleton<Player_Movement>
 
         dirX = Input.GetAxisRaw("Horizontal");
         rb.velocity = new Vector2(dirX * movement_speed, rb.velocity.y);
-        stepSounds.Play();
+        //stepSounds.Play();
         
 
         if (Input.GetKeyDown(KeyCode.Space) && IsGrounded())

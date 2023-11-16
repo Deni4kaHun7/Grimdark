@@ -15,7 +15,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2841632680680934521
 Transform:
   m_ObjectHideFlags: 0
@@ -275,7 +275,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackCoolDown: 3
   detectPlayerRange: 4.55
-  attackRange: 4.55
+  attackRange: 4.29
   enemyType: {fileID: 935465216455593252}
   canAttack: 1
 --- !u!114 &8853612321594122505

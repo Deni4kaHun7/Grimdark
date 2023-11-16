@@ -77,18 +77,20 @@ public class EnemyAI : MonoBehaviour
         if(canAttack && EnemyHealth.Instance.currentHealth > 0){
             enemyPathfinding.MoveTo(roamPosition);
             canAttack = false;
+            (enemyType as IEnemy).FlipColliderDirection();
+            enemyPathfinding.ChangeSpriteDir();
             (enemyType as IEnemy).Attack();
             
             StartCoroutine(AttackCoolDownRoutine());
         }
         
         if(Vector2.Distance(Player_Movement.Instance.transform.position, transform.position) < attackRange){
-            (enemyType as IEnemy).FlipColliderDirection();
-            enemyPathfinding.ChangeSpriteDir();
+            
             enemyPathfinding.StopMoving();
         }
 
         if(Vector2.Distance(Player_Movement.Instance.transform.position, transform.position) > detectPlayerRange){
+            roamPosition = leftDir;
             state = State.Roaming;
         }
     }
