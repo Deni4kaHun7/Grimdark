@@ -16,7 +16,13 @@ public class Finish : MonoBehaviour
         if (collision.gameObject.name == "Player")
         {
             Destroy(Player);
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+            UIFade.Instance.FadeToBlack();
+            StartCoroutine(LoadSceneRoutine());
         }
+    }
+
+    private IEnumerator LoadSceneRoutine(){
+        yield return new WaitForSeconds(1f);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }
