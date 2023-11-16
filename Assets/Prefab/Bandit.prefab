@@ -353,7 +353,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c8ba0991d90944cbfa1a79ea928f5f5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageAmount: 1
+  damageAmount: 3
   swordImpactSound: {fileID: 8324789313562142845}
 --- !u!82 &8324789313562142845
 AudioSource:

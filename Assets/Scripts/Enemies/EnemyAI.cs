@@ -83,7 +83,6 @@ public class EnemyAI : MonoBehaviour
         }
         
         if(Vector2.Distance(Player_Movement.Instance.transform.position, transform.position) < attackRange){
-            Debug.Log("fsdf");
             (enemyType as IEnemy).FlipColliderDirection();
             enemyPathfinding.ChangeSpriteDir();
             enemyPathfinding.StopMoving();

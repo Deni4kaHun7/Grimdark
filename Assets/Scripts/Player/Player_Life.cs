@@ -72,6 +72,7 @@ public class Player_Life : MonoBehaviour
     private void RestartLevel()
     {
         Destroy(gameObject);
+        Destroy(GameObject.FindGameObjectWithTag("Respawn"));
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         
         foreach (GameObject g in GameObject.FindGameObjectsWithTag("Enemy")){

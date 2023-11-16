@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 8648827021172628589}
   - component: {fileID: 283792432069344968}
   - component: {fileID: 5860739343913025810}
-  - component: {fileID: 1112550881299887903}
+  - component: {fileID: 630830309418907905}
   m_Layer: 5
   m_Name: UI_Canvas
-  m_TagString: Untagged
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -104,7 +104,7 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &1112550881299887903
+--- !u!114 &630830309418907905
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
