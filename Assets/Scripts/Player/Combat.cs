@@ -8,6 +8,8 @@ using UnityEngine.InputSystem.Interactions;
 public class Combat : MonoBehaviour
 {
     [SerializeField] private Transform weaponCollider;
+    [SerializeField] private AudioSource swordSwingSound;
+    [SerializeField] private AudioSource blockSound;
     public int damage{get; private set;}
     private PlayerControls playerControls;
     private Animator animator;
@@ -28,6 +30,7 @@ public class Combat : MonoBehaviour
     private void Start() {
         playerControls.Combat.Attack.started += context => {
             if (context.interaction is MultiTapInteraction ){
+                swordSwingSound.Play();
                 animator.SetTrigger("attack");
                 damage = 1;
             } 
@@ -40,9 +43,11 @@ public class Combat : MonoBehaviour
         playerControls.Combat.Attack.performed += context => {
             if (context.interaction is MultiTapInteraction){
                 animator.SetTrigger("3hitCombo");
+                swordSwingSound.Play();
                 damage = 2;
             }  
              else if (context.interaction is HoldInteraction){
+                swordSwingSound.Play();
                 animator.SetTrigger("finishChargeAnim");
             }
         };
@@ -50,6 +55,7 @@ public class Combat : MonoBehaviour
         playerControls.Combat.Defense.started += _ => {
             animator.SetBool("block", true);
             health.canTakeDamage = false;
+            blockSound.Play();
             };
 
         playerControls.Combat.Defense.performed += _ => {

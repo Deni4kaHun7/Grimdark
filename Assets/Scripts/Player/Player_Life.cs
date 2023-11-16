@@ -36,6 +36,7 @@ public class Player_Life : MonoBehaviour
 
     public void TakeDamage(int damage){
         if (canTakeDamage){
+            Debug.Log("fsdf");
             currentHealth -= damage;
             ScreenShakeManager.Instance.ShakeScreen();
             knockback.GetKnockedBack(EnemyAI.Instance.transform , knockBackThrust);
