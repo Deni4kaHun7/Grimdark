@@ -6680,7 +6680,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &275003542
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6697,7 +6697,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -19.4, y: -148.2}
+  m_AnchoredPosition: {x: -9, y: -148.2}
   m_SizeDelta: {x: 296.4928, y: 69.0409}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &275003543
@@ -6747,8 +6747,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40.77
-  m_fontSizeBase: 40.77
+  m_fontSize: 70
+  m_fontSizeBase: 70
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -6783,7 +6783,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -166.67023, y: 0, z: -295.27478, w: 0}
+  m_margin: {x: -417.1926, y: 0, z: -507.25522, w: -72.266106}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -22402,7 +22402,7 @@ GameObject:
   - component: {fileID: 872938080}
   m_Layer: 5
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: Respawn
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41275,7 +41275,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -16.3, y: -148}
+  m_AnchoredPosition: {x: -16.3, y: -148.16406}
   m_SizeDelta: {x: 296.4928, y: 69.0409}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1475746650
@@ -41325,8 +41325,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 40.77
-  m_fontSizeBase: 40.77
+  m_fontSize: 70
+  m_fontSizeBase: 70
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -41361,7 +41361,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: -151.96162, y: 0, z: -258.7476, w: 0}
+  m_margin: {x: -354.3065, y: 0, z: -427.3686, w: -120.44337}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -59731,7 +59731,12 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6526802228682641021, guid: add4bd776aaa029478bff34b658fc0e0, type: 3}
+    - {fileID: 2464222044056172153, guid: add4bd776aaa029478bff34b658fc0e0, type: 3}
+    - {fileID: 8614074108805789124, guid: add4bd776aaa029478bff34b658fc0e0, type: 3}
+    - {fileID: 3333448692278234464, guid: add4bd776aaa029478bff34b658fc0e0, type: 3}
+    - {fileID: 8754641719399587574, guid: add4bd776aaa029478bff34b658fc0e0, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:

@@ -24,5 +24,8 @@ public class Finish : MonoBehaviour
     private IEnumerator LoadSceneRoutine(){
         yield return new WaitForSeconds(1f);
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        Player_Life.Instance.currentHealth = Player_Life.Instance.startHealth;
+        Destroy(GameObject.FindGameObjectWithTag("Respawn"));
+        UIFade.Instance.FadeToClear();
     }
 }

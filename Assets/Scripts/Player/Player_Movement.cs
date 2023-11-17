@@ -41,8 +41,6 @@ public class Player_Movement : Singleton<Player_Movement>
         animator = GetComponent<Animator>();
         knockback = GetComponent<Knockback>();
         health = GetComponent<Player_Life>();
-
-        UIFade.Instance.FadeToClear();
     }
 
     // Update is called once per frame

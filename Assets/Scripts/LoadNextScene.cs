@@ -9,12 +9,14 @@ public class LoadNextScene : MonoBehaviour
     {
         Destroy(GameObject.FindGameObjectWithTag("Trap"));
         Destroy(GameObject.FindGameObjectWithTag("Player"));
+        
         UIFade.Instance.FadeToBlack();
         StartCoroutine(LoadSceneRoutine());
     }
 
     private IEnumerator LoadSceneRoutine(){
         yield return new WaitForSeconds(1f);
+        Destroy(GameObject.FindGameObjectWithTag("Respawn"));
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 }

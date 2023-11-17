@@ -8,7 +8,7 @@ public class Player_Life : MonoBehaviour
 {
     
 
-    [SerializeField] private int startHealth = 3;
+    [SerializeField] public int startHealth = 3;
     [SerializeField] private float knockBackThrust = 15f;
     [SerializeField] private float deathTime = 1f;
     public bool canTakeDamage;
@@ -16,9 +16,10 @@ public class Player_Life : MonoBehaviour
     readonly int KNOCKBACK_HASH = Animator.StringToHash("knockback");
     readonly int DEATH_HASH = Animator.StringToHash("death");
     private Animator healthUIAnimator;
-    private int currentHealth;
+    public int currentHealth;
     private Knockback knockback;
     private Rigidbody2D rb;
+    public static Player_Life Instance;
 
 
     public void Awake() {
@@ -29,6 +30,7 @@ public class Player_Life : MonoBehaviour
 
     public void Start()
     {
+        Instance = this;
         isDead = false;
         canTakeDamage = true;
         currentHealth = startHealth;
